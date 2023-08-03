@@ -1,6 +1,6 @@
-#body {
+* {
     position: absolute;
- margin: auto;
+   margin: auto;
     width: 1920px;
     height: 1080px;
     background: #fce9e9;
@@ -62,5 +62,16 @@
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.18px;
+  }
+  #About-middle {
+    position: absolute;
+    left: 892px;
+    top: 173px;
+    width: 136px;
+    height: 116px;
+    color: #331d2c;
+    font-family: "32_Sarchia_Dastnus_2";
+    font-size: 48px;
+    font-weight: 400;
   }
   
