@@ -1,0 +1,66 @@
+#body {
+    position: absolute;
+ margin: auto;
+    width: 1920px;
+    height: 1080px;
+    background: #fce9e9;
+    background-blend-mode: normal;
+  }
+
+
+
+
+
+#contact {
+    position: absolute;
+    left: 589px;
+    top: 69px;
+    width: 112px;
+    height: 36px;
+    font-family: "32_Sarchia_Dastnus_2";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.18px;
+  }
+  
+  #project {
+    position: absolute;
+    left: 397px;
+    top: 67px;
+    width: 135px;
+    height: 36px;
+    font-family: "32_Sarchia_Dastnus_2";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.18px;
+  }
+  
+  #home {
+    position: absolute;
+    left: 92px;
+    top: 67px;
+    width: 82px;
+    height: 30px;
+    font-family: "32_Sarchia_Dastnus_2";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.18px;
+  }
+  
+  #about {
+    position: absolute;
+    left: 240px;
+    top: 67px;
+    width: 94px;
+    height: 30px;
+    font-family: "32_Sarchia_Dastnus_2";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.18px;
+  }
+  
