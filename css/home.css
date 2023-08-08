@@ -1,160 +1,332 @@
+/* Include Normalize.css to reset default browser styles */
+/* Add the path to your normalize.css file */
+/* <link rel="stylesheet" href="../css/normalize/normalize.css-master"> */
+
+/* Common styles for all screen sizes */
 body {
-  position: absolute; /* Use relative position for the body */
-  margin: 0; /* Reset default margin */
-  padding: 0; /* Reset default padding */
-  width: 100%; /* Set the body to take up the full width of the viewport */
-  min-height: 100vh; /* Set a minimum height to cover the entire viewport */
   background-color: #fce9e9;
-  font-family: Arial, sans-serif; /* Use a common font for better compatibility */
-  line-height: 1.6; /* Improve line height for better readability */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Container to restrict content within 1920x1080 on larger screens */
+.container {
+  max-width: 1920px;
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px;
+}
+
+/* Styles for larger screens (PC and laptops) */
+
+@media screen and (min-width: 768px) {
+  #body1 {
+  position: absolute;
+      left: -91px;
+      top: -901px;
+      width: 1920px;
+      height: 1080px;
+      background: #fce9e9;
+      background-blend-mode: normal;
+    }
+
+  #midOval {
+    position: absolute;
+      left: -250.26px;
+      top: 300px;
+      width: 508.19px;
+      height: 508.19px;
+      background: #331d2c;
+      background-blend-mode: normal;
+      border-radius: 50%;
+      transform: rotate(-55deg);
+  }
+
+  #bigOval {
+    position: absolute;
+    left: 750px;
+    top: -950px;
+    width: 1515px;
+    height: 1515px;
+    background: #d4ba9b;
+    background-blend-mode: normal;
+    border-radius: 50%;
+  }
+
+  /* Common styles for home, about, project, contact */
+  #home,
+  #about,
+  #project,
+  #contact {
+    position: absolute;
+    top: 40px;
+    font-family: "32_Sarchia_Dastnus_2";
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.18px;
+    z-index: 2;
+  }
+
+  #home {
+    left: 50px;
+    width: 82px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  #about {
+    left: 150px;
+    width: 94px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  #project {
+    left: 230px;
+    width: 135px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+
+  }
+
+  #contact {
+    left: 370px;
+    width: 112px;
+    height: 36px;
+    line-height: 36px;
+
+  }
+
+  #smallOval2 {
+    position: absolute;
+    left: 550px;
+    top: 35px;
+    width: 40px; /* Adjust the width to your preference */
+    height: 40px; /* Adjust the height to your preference */
+    background: #d4ba9b;
+    background-blend-mode: normal;
+    border-radius: 50%;
 }
 
 
-#smalloval {
+#smallOval1 {
   position: absolute;
-  left: -274.26px;
-  top: 916.29px;
-  width: 698.19px;
-  height: 698px;
+  left: 810px;
+  top: 35px;
+  width: 40px; /* Adjust the width to your preference */
+  height: 40px; /* Adjust the height to your preference */
   background: #331d2c;
   background-blend-mode: normal;
   border-radius: 50%;
-  transform: rotate(-55deg);
 }
 
-#bigoval {
-  position: absolute;
-  left: 935px;
-  top: -793px;
-  width: 1602px;
-  height: 1515px;
-  background: #d4ba9b;
-  border-radius: 50%;
-  background-blend-mode: normal;
+  #FullstackPros {
+    position: absolute;
+    left: 620px;
+    top: 35px;
+    width: 236px;
+    height: 53px;
+    color: #331d2c;
+    font-family: "32_Sarchia_Dastnus_2";
+    font-size: 26px;
+    font-weight: 400;
+  }
+
+  #middle-text {
+    position: absolute;
+    left: 250px;
+    top: 320px;
+    width: 1324px;
+    height: 160px;
+    font-family: "31_Sarchia_Dastnus_1";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+
+  #DesignDevelopment {
+    position: absolute;
+    left: 250px;
+    top: 150px;
+    width: 630px;
+    height: 281px;
+    font-family: "32_Sarchia_Dastnus_2";
+    font-size: 48px;
+    font-weight: 400;
+  }
 }
 
-#about {
-  position: absolute;
-  left: 184px;
-  top: 74px;
-  width: 88px;
-  height: 30px;
-  font-family: "32_Sarchia_Dastnus_2";
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.18px;
-}
+/* Styles for smaller screens (mobile devices) */
+@media screen and (max-width: 767px) {
+  #body1 {
+    position: absolute;
+        left: -91px;
+        top: -901px;
+        width: 1920px;
+        height: 1080px;
+        background: #fce9e9;
+        background-blend-mode: normal;
+      }
+  
+    #midOval {
+      position: absolute;
+        left: -250.26px;
+        top: 300px;
+        width: 508.19px;
+        height: 508.19px;
+        background: #331d2c;
+        background-blend-mode: normal;
+        border-radius: 50%;
+        transform: rotate(-55deg);
+    }
+  
+    #bigOval {
+      position: absolute;
+      left: 750px;
+      top: -950px;
+      width: 1515px;
+      height: 1515px;
+      background: #d4ba9b;
+      background-blend-mode: normal;
+      border-radius: 50%;
+    }
 
-#home {
-  position: absolute;
-  left: 36px;
-  top: 74px;
-  width: 79px;
-  height: 30px;
-  font-family: "32_Sarchia_Dastnus_2";
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.18px;
-}
-
-#project {
-  position: absolute;
-  left: 341px;
-  top: 74px;
-  width: 135px;
-  height: 36px;
-  font-family: "32_Sarchia_Dastnus_2";
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 36px;
-  text-align: center;
-  letter-spacing: 0.18px;
-}
-
-#contact {
-  position: absolute;
-  left: 533px;
-  top: 76px;
-  width: 106px;
-  height: 36px;
-  font-family: "32_Sarchia_Dastnus_2";
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 36px;
-  letter-spacing: 0.18px;
-}
-
-#supersmall {
-  position: absolute;
-  left: 808px;
-  top: 74px;
-  width: 52px;
-  height: 38px;
-  background: #d4ba9b;
-  background-blend-mode: normal;
-  border-radius: 50%;
-}
-
-#supersmall2 {
-  position: absolute;
-  left: 1134px;
-  top: 74px;
-  width: 52px;
-  height: 38px;
-  background: #331d2c;
-  border-radius: 50%;
-  background-blend-mode: normal;
-}
-
-#fullstackP {
-  position: absolute;
-  left: 877px;
-  top: 75px;
-  width: 226px;
-  height: 44px;
-  color: #331d2c;
-  font-family: "32_Sarchia_Dastnus_2";
-  font-size: 36px;
-  font-weight: 400;
-}
-
-#diveintoth {
-  position: absolute;
-  left: 430px;
-  top: 562px;
-  width: 1254px;
-  height: 160px;
-  font-family: "31_Sarchia_Dastnus_1";
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 40px;
-}
-
-#designDeve {
-  position: absolute;
-  left: 420px;
-  top: 219px;
-  width: 600px;
-  height: 232px;
-  font-family: "32_Sarchia_Dastnus_2";
-  font-size: 96px;
-  font-weight: 400;
-}
-#wavyline1 {
-  position: absolute;
-  left: 337.1px;
-  top: 0px;
-  width: 918px;
-  height: 625.8px;
-  border: 1px solid ;
-}
-#wavyline2 {
-  position: absolute;
-  left: 292px;
-  top: 640.89px;
-  width: 952.21px;
-  height: 439.11px;
-  border: 1px solid ;
-}
+  }@media screen and (min-width: 1200px) {
+      #body1 {
+        position: absolute;
+            left: -91px;
+            top: -901px;
+            width: 1920px;
+            height: 1080px;
+            background: #fce9e9;
+            background-blend-mode: normal;
+          }
+      
+        #midOval {
+          position: absolute;
+            left: -250.26px;
+            top: 300px;
+            width: 508.19px;
+            height: 508.19px;
+            background: #331d2c;
+            background-blend-mode: normal;
+            border-radius: 50%;
+            transform: rotate(-55deg);
+        }
+      
+        #bigOval {
+          position: absolute;
+          left: 750px;
+          top: -950px;
+          width: 1515px;
+          height: 1515px;
+          background: #d4ba9b;
+          background-blend-mode: normal;
+          border-radius: 50%;
+        }
+      
+        /* Common styles for home, about, project, contact */
+        #home,
+        #about,
+        #project,
+        #contact {
+          position: absolute;
+          top: 40px;
+          font-family: "32_Sarchia_Dastnus_2";
+          font-size: 22px;
+          font-weight: 400;
+          letter-spacing: 0.18px;
+          z-index: 2;
+        }
+      
+        #home {
+          left: 50px;
+          width: 82px;
+          height: 30px;
+          line-height: 30px;
+        }
+      
+        #about {
+          left: 150px;
+          width: 94px;
+          height: 30px;
+          line-height: 30px;
+        }
+      
+        #project {
+          left: 230px;
+          width: 135px;
+          height: 36px;
+          text-align: center;
+          line-height: 36px;
+      
+        }
+      
+        #contact {
+          left: 370px;
+          width: 112px;
+          height: 36px;
+          line-height: 36px;
+      
+        }
+      
+        #smallOval2 {
+          position: absolute;
+          left: 550px;
+          top: 35px;
+          width: 40px; /* Adjust the width to your preference */
+          height: 40px; /* Adjust the height to your preference */
+          background: #d4ba9b;
+          background-blend-mode: normal;
+          border-radius: 50%;
+      }
+      
+      
+      #smallOval1 {
+        position: absolute;
+        left: 810px;
+        top: 35px;
+        width: 40px; /* Adjust the width to your preference */
+        height: 40px; /* Adjust the height to your preference */
+        background: #331d2c;
+        background-blend-mode: normal;
+        border-radius: 50%;
+      }
+      
+        #FullstackPros {
+          position: absolute;
+          left: 620px;
+          top: 35px;
+          width: 236px;
+          height: 53px;
+          color: #331d2c;
+          font-family: "32_Sarchia_Dastnus_2";
+          font-size: 26px;
+          font-weight: 400;
+        }
+      
+        #middle-text {
+          position: absolute;
+          left: 250px;
+          top: 320px;
+          width: 1324px;
+          height: 160px;
+          font-family: "31_Sarchia_Dastnus_1";
+          font-size: 26px;
+          font-weight: 400;
+          line-height: 40px;
+        }
+      
+        #DesignDevelopment {
+          position: absolute;
+          left: 250px;
+          top: 150px;
+          width: 630px;
+          height: 281px;
+          font-family: "32_Sarchia_Dastnus_2";
+          font-size: 48px;
+          font-weight: 400;
+        }
+    }
+    
