@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    background-color: #e6d8c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .container {
+    background-color: #e6d8c8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    top: 60px;
+  }
+  
+  #body3 {
+    position: absolute;
+    left: 170px;
+    top: -230px;
+    width: 1920px;
+    height: 1080px;
+    background: #e6d8c8;
+    background-blend-mode: normal;
+  }
+  
+  #smallLeftOval {
+    position: absolute;
+    left: -25px;
+    top: 350px;
+    width: 316px;
+    height: 514px;
+    background: #d4ba9b;
+    background-blend-mode: normal;
+    transform: rotate(-55deg);
+    border-radius: 50%;
+  }
+  
+  #smallRightOval {
+    position: absolute;
+    left: 1100px;
+    top: -320px;
+    width: 585px;
+    height: 514px;
+    background: #d4ba9b;
+    background-blend-mode: normal;
+    transform: rotate(-55deg);
+    border-radius: 50%;
+  }
+  
+  #bigLeftOval {
+    position: absolute;
+    left: -140.56px;
+    top: -260.22px;
+    width: 500px;
+    height: 514px;
+    background: #a78295;
+    background-blend-mode: normal;
+    border-radius: 50%;
+  }
+  
+  #bigRightOval {
+    position: absolute;
+    left: 1100px;
+    top: 400px;
+    width: 585px;
+    height: 514px;
+    background: #a78295;
+    background-blend-mode: normal;
+    transform: rotate(26.999998deg);
+    border-radius: 50%;
+  }
+  
+  #home,
+  #about,
+  #project,
+  #contact {
+    position: absolute;
+    top: 40px;
+    font-family: "32_Sarchia_Dastnus_2";
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.18px;
+    color:#331d2c;
+    text-decoration: none;
+    z-index: 2; /* Set a higher z-index value */
+  }
+  
+  #home {
+    left: 50px;
+    width: 82px;
+    height: 30px;
+    line-height: 30px;
+  }
+  
+  #about {
+    left: 150px;
+    width: 94px;
+    height: 30px;
+    line-height: 30px;
+  }
+  
+  #project {
+    left: 230px;
+    width: 135px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+  }
+  
+  #contact {
+    left: 370px;
+    width: 112px;
+    height: 36px;
+    line-height: 36px;
+  }
+    
+  #middle-text {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    width: 442px;
+    height: 122px;
+    color: #757575;
+    font-family: "Bell MT";
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  #contactUS {
+    position: absolute;
+    left: 60%; /* Move the element horizontally to the center */
+    top: 9.5%; /* Move the element vertically to the center */
+    transform: translate(-50%, -50%); /* Adjust the element's position based on its own dimensions */
+    width: 442px;
+    height: 122px;
+    color: #757575;
+    font-family: "Bell MT";
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .input-pair {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .input-field {
+    width: calc(50% - 5px);
+    margin-right: 10px; /* Add margin to create space between input fields */
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    background-color: #d4ba9b;
+    color: #333;
+    border-radius: 20px;
+  }
+  
+  /* Style for the placeholders of input fields */
+  .input-field::placeholder {
+    color: #757575;
+    background-color: #D4BA9B;
+  }
+  /* Style for the message box container */
+  .message-box-container {
+    text-align: left; /* Align the container and its content to the right */
+    margin-top: 15px; /* Adjust margin for spacing */
+  }
+  
+  .message-box {
+    width: 180px; /* Set a constant width */
+    height: 100px; /* Set a constant height */
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    background-color: #d4ba9b;
+    color: #333;
+    border-radius: 20px;
+    resize: none; /* Disable resizing of the textarea */
+    margin-top: 15px; /* Adjust margin for spacing */
+  }
+  
+  /* Style for the send button */
+  /* Style for the send button */
+  .send-button {
+    text-align: left;
+    margin-top: 15px; /* Adjust margin for spacing */
+  }
+  
+  .send-button button {
+    padding: 10px 20px; /* Increase padding for a bigger button */
+    font-size: 14px; /* Increase font size */
+    background-color: #D4BA9B; /* Change background color */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #000000; /* Change text color */
+  }

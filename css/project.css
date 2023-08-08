@@ -1,0 +1,165 @@
+body {
+    /* Set the background color and size of the page */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100hv;
+    height: 100hv;
+    background: #f6e4e4;
+    background-blend-mode: normal;
+  }
+  
+
+  
+  #oval {
+    position: absolute;
+    left: 1000.53px;
+    top: -433.75px;
+    width: 800px;
+    height: 800px;
+    background: #331d2c;
+    border-radius: 50%;
+    background-blend-mode: normal;
+    transform: rotate(70deg);
+  }
+  
+  #ourProject {
+    position: absolute;
+    left: 900px;
+    top: 230px;
+    width: 210px;
+    height: 44px;
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  
+  #linestick {
+    position: absolute;
+    left: 870px;
+    top: 290px;
+    width: 260px;
+    height: 4.33px;
+    background:  url(../design/linestick.png)  no-repeat;
+  }
+  
+  #e-commerce{
+    position: absolute;
+    left: 900px;
+    top: 490px;
+    width: 267px;
+    height: 31px;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 400;
+    color:#331d2c;
+    text-decoration: none;
+  }
+  
+  #real-TimeC {
+    position: absolute;
+    left: 900px;
+    top: 440px;
+    width: 333px;
+    height: 31px;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 400;
+    color:#331d2c;
+    text-decoration: none;
+  }
+  
+  #e-Library {
+    position: absolute;
+    left: 900px;
+    top: 390px;
+    width: 120px;
+    height: 31px;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 400;
+    color:#331d2c;
+    text-decoration: none;
+  }
+  
+  #petAdoptio {
+    position: absolute;
+    left: 900px;
+    top: 350px;
+    width: 270px;
+    height: 31px;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 400;
+    color:#331d2c;
+    text-decoration: none;
+  }
+  
+  #portfolio {
+    position: absolute;
+    left: 900px;
+    top: 310px;
+    width: 210px;
+    height: 31px;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 400;
+    color:#331d2c;
+    text-decoration: none;
+  }
+  
+  
+  #img-projec {
+    position: absolute;
+    left: 150.6px;
+    top: 180.3px;
+    width: 677.6px;
+    height: 381.15px;
+    border: 1px solid #5a4242;
+    background:  url(../design/page4/FullHD.svg)  no-repeat;
+  }
+  
+  #home,
+  #about,
+  #project,
+  #contact {
+    position: absolute;
+    top: 40px;
+    font-family: "32_Sarchia_Dastnus_2";
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.18px;
+    color:#331d2c;
+    text-decoration: none;
+    z-index: 2; /* Set a higher z-index value */
+  }
+  
+  #home {
+    left: 50px;
+    width: 82px;
+    height: 30px;
+    line-height: 30px;
+  }
+  
+  #about {
+    left: 150px;
+    width: 94px;
+    height: 30px;
+    line-height: 30px;
+  }
+  
+  #project {
+    left: 230px;
+    width: 135px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+  }
+  
+  #contact {
+    left: 370px;
+    width: 112px;
+    height: 36px;
+    line-height: 36px;
+  }
+  @import url('https://cdn.jsdelivr.net/npm/normalize.css');

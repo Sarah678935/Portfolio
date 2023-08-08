@@ -1,0 +1,380 @@
+body {
+    background-color: #fce9e9;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  /* Container to restrict content within 1920x1080 on larger screens */
+  .container {
+    max-width: 1920px;
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px;
+  }
+  #body2 {
+    position: absolute;
+    left: -91px;
+    top: -901px;
+    width: 1920px;
+    height: 1080px;
+    background: #fce9e9;
+    background-blend-mode: normal;
+  }
+  
+  #bigoval {
+    position: absolute;
+    left: 50%;
+    top: -160%; /* Adjust this value to move it higher or lower */
+    width: 1350px;
+    height: 1350px;
+    background: #d4ba9b;
+    background-blend-mode: normal;
+    border-radius: 50%;
+    margin-left: -675px; /* Half of the width */
+  }
+  #home,
+  #about,
+  #project,
+  #contact {
+    position: absolute;
+    top: 40px;
+    font-family: "32_Sarchia_Dastnus_2";
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.18px;
+    color:#331d2c;
+    text-decoration: none;
+    z-index: 2; /* Set a higher z-index value */
+  }
+  
+  #home {
+    left: 50px;
+    width: 82px;
+    height: 30px;
+    line-height: 30px;
+  }
+  
+  #about {
+    left: 150px;
+    width: 94px;
+    height: 30px;
+    line-height: 30px;
+  }
+  
+  #project {
+    left: 230px;
+    width: 135px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+  }
+  
+  #contact {
+    left: 370px;
+    width: 112px;
+    height: 36px;
+    line-height: 36px;
+  }
+    
+
+  #mongoDb {
+    position: absolute;
+    left: 1205.6px;
+    top: 405px;
+    width: 98px;
+    height: 24.2px;
+    color: #fce9e9;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  #rectangle-mongoDb {
+    position: absolute;
+    left: 1170.6px;
+    top: 400.8px;
+    width: 130px;
+    height: 32.2px;
+    border-radius: 25px;
+    background: #331d2c;
+    background-blend-mode: normal;
+  }
+  
+  #mysql {
+    position: absolute;
+    left: 1075px;
+    top: 405px;
+    width: 98px;
+    height: 24.2px;
+    color: #fce9e9;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  #rectangle-mysql {
+    position: absolute;
+    left: 1030.6px;
+    top: 400.8px;
+    width: 130px;
+    height: 32.2px;
+    border-radius: 25px;
+    background: #331d2c;
+    background-blend-mode: normal;
+  }
+  
+  #bootstrap {
+    position: absolute;
+    left: 925px;
+    top: 405px;
+    width: 98px;
+    height: 24.2px;
+    color: #fce9e9;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  #rectangle-bootstrap {
+    position: absolute;
+    left: 890.6px;
+    top: 400.8px;
+    width: 130px;
+    height: 32.2px;
+    border-radius: 25px;
+    background: #331d2c;
+    background-blend-mode: normal;
+  }
+  
+  #expressjs {
+    position: absolute;
+    left: 1065.6px;
+    top: 355px;
+    width: 98px;
+    height: 24.2px;
+    color: #fce9e9;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  #rectangle-expressjs{
+    position: absolute;
+    left: 1030.6px;
+    top: 350.9px;
+    width: 130px;
+    height: 32.2px;
+    border-radius: 25px;
+    background: #331d2c;
+    background-blend-mode: normal;
+  }
+  
+  #css {
+    position: absolute;
+    left: 1220.6px;
+    top: 355px;
+    width: 98px;
+    height: 24.2px;
+    color: #fce9e9;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  #rectangle-css {
+    position: absolute;
+    left: 1170.6px;
+    top: 350.9px;
+    width: 130px;
+    height: 32.2px;
+    border-radius: 25px;
+    background: #331d2c;
+    background-blend-mode: normal;
+  }
+  
+  #nodejs {
+    position: absolute;
+    left: 930.6px;
+    top: 355px;
+    width: 98px;
+    height: 24.2px;
+    color: #fce9e9;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  #rectangle-nodejs {
+    position: absolute;
+    left: 890.6px;
+    top: 350.9px;
+    width: 130px;
+    height: 32.2px;
+    border-radius: 25px;
+    background: #331d2c;
+    background-blend-mode: normal;
+  }
+  
+  #git {
+    position: absolute;
+    left: 940.6px;
+    top: 303px;
+    width: 98px;
+    height: 24.2px;
+    color: #fce9e9;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  #rectangle-git {
+    position: absolute;
+    left: 890.6px;
+    top: 300px;
+    width: 130px;
+    height: 32.2px;
+    border-radius: 25px;
+    background: #331d2c;
+    background-blend-mode: normal;
+  }
+  
+  #javascript {
+    position: absolute;
+    left: 1065px;
+    top: 304px;
+    width: 98px;
+    height: 24.2px;
+    color: #fce9e9;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  #rectangle-javascript {
+    position: absolute;
+    left: 1030.6px;
+    top: 300px;
+    width: 130px;
+    height: 32.2px;
+    border-radius: 25px;
+    background: #331d2c;
+    background-blend-mode: normal;
+  }
+  
+  #html {
+    position: absolute;
+    left: 1211px;
+    top: 304px;
+    width: 98px;
+    height: 24.2px;
+    color: #fce9e9;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  #rectangle-html {
+    position: absolute;
+    left: 1170.6px;
+    top: 300px;
+    width: 130px;
+    height: 32.2px;
+    border-radius: 25px;
+    background: #331d2c;
+    background-blend-mode: normal;
+  }
+  
+  
+  #midOval {
+    position: absolute;
+    left: 50%;
+    top: 900.7px;
+    width: 782px;
+    height: 782px;
+    background: #331d2c;
+    background-blend-mode: normal;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin-top: -391px; /* Half of the height */
+    margin-left: -391px; /* Half of the width */
+  }
+  
+  #ourskills {
+    position: absolute;
+    right: 210px;
+    top: 190px;
+    width: 154px;
+    height: 37px;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: right;
+  }
+  #straightLine {
+    position: absolute;
+    left: 980px;
+    top: 240px;
+    width: 241.23px;
+    height: 2.43px;
+    background: #000; /* Set the color of the line */
+  }
+  #IntherealmofdesignWedra{
+    position: absolute;
+    left: 120px;
+    top: 300px;
+    width: 1090px;
+    height: 250px;
+    font-family: "32_Sarchia_Dastnus_2";
+    font-size: 20px;
+    font-weight: 200;
+  }
+  
+  #smalloval {
+    position: absolute;
+    left: 50%; /* Set the left position to 50% of the parent container */
+    top: 60px; /* Set the top position to 50% of the parent container */
+    width: 73px;
+    height: 73px;
+    background: #331d2c;
+    background-blend-mode: normal;
+    border-radius: 50%;
+    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+  }
+  #middle-About {
+    position: absolute;
+    left: 610px;
+    top: 130px;
+    width: 136px;
+    height: 116px;
+    color: #331d2c;
+    font-family: "32_Sarchia_Dastnus_2";
+    font-size: 48px;
+    font-weight: 400;
+  }
