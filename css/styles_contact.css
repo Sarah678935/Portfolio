@@ -5,6 +5,8 @@ body {
   padding: 0;
   overflow: hidden;
   touch-action: none;
+  scroll-behavior:none ;
+
 }
 
 .container {
