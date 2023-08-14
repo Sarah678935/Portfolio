@@ -1,11 +1,4 @@
-:root{
 
-  --background-color: #fce9e9;
-
-
-
-
-}
 
 
 
@@ -226,12 +219,7 @@ nav a {
   background-color: #E6D8C8;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-      background-color: #d4ba9b; /* Use the same background color as light mode */
-      color: black; /* Use the same text color as light mode */
-  }
-}
+
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
 
