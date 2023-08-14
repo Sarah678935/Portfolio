@@ -9,12 +9,24 @@
     <title>FullStackPros</title>
 </head>
 <body>
-  <a id="home" href="..//html/home.html">Home</a>
-  <a id="contact" href="..//html/contact.html">Contact</a>
-  <a id="project" href="..//html/project.html">Project</a>
-  <a id="about" href="..//html/about.html">About</a>
+  <div class="container"></div>
+    <nav>
+      <a id="home" href="..//html/home.html">Home</a>
+      <a id="contact" href="..//html/contact.html">Contact</a>
+      <a id="project" href="..//html/project.html">Project</a>
+      <a id="about" href="..//html/about.html">About</a>
+    
+      </nav>
+      <header>
 
-    <div id="body3"></div>
+      <label class="burger" for="burger">
+        <input type="checkbox" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+  </header>
+  
     <div id="bigRightOval"></div>
     <div id="smallLeftOval"></div>
     <div id="bigLeftOval"></div>
@@ -23,7 +35,7 @@
     <div id="middle-text"> We will be glad to answer your question </div>
    
 
-    <div class="container">
+    <div class="form-container">
   <div class="input-pair">
     <input class="input-field" type="text" placeholder="First Name">
     <input class="input-field" type="text" placeholder="Last Name">
@@ -38,6 +50,18 @@
   <div class="send-button">
     <button>Send</button>
   </div>
+</div>
+
+<div class="social-media">
+  <button aria-label="Address">
+    <img src="../design/icons/Address.svg" alt="" class="icon">
+  </button>
+  <button aria-label="GitHub">
+    <img src="../design/icons/Github.svg" alt="" class="icon">
+  </button>
+  <button aria-label="Phone">
+    <img src="../design/icons/Phone.svg" alt="" class="icon">
+  </button>
 </div>
     <script src="../js/index.js"></script>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>

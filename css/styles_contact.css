@@ -1,213 +1,400 @@
 body {
+  background-color: #fce9e9;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding-bottom: 10px;
+}
+
+/* Styles for navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+  top: 1%;
+  position: fixed; /* Add this to make it stay at the top */
+  left: 0; /* Adjust this to position it on the left */
+  width: 100%; /* Take up the entire width */
+  z-index: 999; /* Make sure it's on top */
+}
+
+/* Adjust the styles for your navigation links */
+nav a {
+  color: #331d2c;
+  text-decoration: none;
+  font-family: "32_Sarchia_Dastnus_2";
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+  margin: 0 10px;
+}
+
+#middle-text {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 442px;
+  height: auto;
+  color: #757575;
+  font-family: "Bell MT";
+  font-size: 4vh;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#contactUS {
+  position: absolute;
+  left: 84%; /* Move the element horizontally to the center */
+  top: 10%; /* Move the element vertically to the center */
+  transform: translate(-50%, -50%); /* Adjust the element's position based on its own dimensions */
+  width: 80%;
+  height: auto;
+  color: #757575;
+  font-family: "Bell MT";
+  font-size: 4.5vh;
+  font-weight: 400;}
+
+/* Default styles for larger screens */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.input-pair {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: calc(50% - 5px);
+  margin-right: 10px;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  background-color: #d4ba9b;
+  color: #333;
+  border-radius: 20px;
+}
+
+.input-field::placeholder {
+  color: #757575;
+  background-color: #d4ba9b;
+}
+
+.message-box-container {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.message-box {
+  width: 180px;
+  height: 100px;
+  padding: 0.8rem; /* Default padding */
+  font-size: 14px;
+  border: none;
+  background-color: #d4ba9b;
+  color: #333;
+  border-radius: 20px;
+  resize: none;
+  margin-left: -50%;
+}
+.send-button {
+  text-align: center;
+  margin-top: 15px;
+  margin-left: -23%;
+}
+
+.send-button button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #d4ba9b;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #000000;
+}
+
+#smallLeftOval {
+  position: absolute;
+  left: -14%; /* Adjust the left position based on your design */
+  top: 60%; /* Adjust the top position based on your design */
+  width: 40%; /* Adjust the width based on your design */
+  padding-bottom: 40%; /* Maintain a 1.25:1 aspect ratio (height = 1.25 * width) */
+  background: #d4ba9b;
+  background-blend-mode: normal;
+  transform: rotate(-55deg);
+  border-radius: 50%;
+}
+
+#bigLeftOval {
+  position: absolute;
+  left: -10%; /* Adjust the left position based on your design */
+  top: -30%; /* Adjust the top position based on your design */
+  width: 35%; /* Adjust the width based on your design */
+  padding-bottom: 35%; /* Maintain a 1.25:1 aspect ratio (height = 1.25 * width) */
+  background: #a78295;
+  background-blend-mode: normal;
+  border-radius: 50%;
+}
+
+#bigRightOval {
+  position: absolute;
+  right: -10%; /* Adjust the right position based on your design */
+  bottom: -30%; /* Adjust the bottom position based on your design */
+  width: 35%; /* Adjust the width based on your design */
+  padding-bottom: 35%; /* Maintain a 1.25:1 aspect ratio (height = 1.25 * width) */
+  background: #a78295;
+  background-blend-mode: normal;
+  transform: rotate(27deg);
+  border-radius: 50%;
+}
+
+#smallRightOval {
+  position: absolute;
+  right: -10%; /* Adjust the left position based on your design */
+  top: -45%; /* Adjust the top position based on your design */
+  width: 40%; /* Adjust the width based on your design */
+  padding-bottom: 40%; /* Maintain a 1.25:1 aspect ratio (height = 1.25 * width) */
+  background: #d4ba9b;
+  background-blend-mode: normal;
+  transform: rotate(27deg);
+  border-radius: 50%;
+}
+
+
+.social-media {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.social-media button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.social-media button:hover {
+  background-color: #E6D8C8;
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+
+  body {
+    overflow: hidden;
     margin: 0;
-    background-color: #e6d8c8;
+    padding: 0;
+    touch-action: none;
+  }
+
+  
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+  }
+  
+  .social-media button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
   }
   
-  .container {
-    background-color: #e6d8c8;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-    top: 60px;
+  .icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
   
-  #body3 {
-    position: absolute;
-    left: 170px;
-    top: -230px;
-    width: 1920px;
-    height: 1080px;
-    background: #e6d8c8;
-    background-blend-mode: normal;
+  .social-media button:hover {
+    background-color: #E6D8C8;
+  }
+
+
+  .message-box-container {
+    text-align: left; /* Center text on smaller screens */
+    margin-top: 15px;
+  }
+
+
+  .message-box {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 0.6rem; /* Adjust padding for smaller screens */
+    font-size: 2vh; /* Adjust font size for smaller screens */
+    border-radius: 3vh; /* Adjust border radius for smaller screens */
+    resize: none;
+    margin: 0 auto; /* Center horizontally */
   }
   
+    .send-button {
+      text-align: center;
+      margin-top: 15px;
+      margin-left: 0;
+    }
+  
+    .send-button button {
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: #d4ba9b;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      color: #000000;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    #smallRightOval {
+      width: 50%; /* Adjust the width for smaller screens */
+      padding-bottom: 50%; /* Maintain aspect ratio for smaller screens */
+      right: -10%; /* Adjust position for smaller screens */
+      top: -10%; /* Adjust position for smaller screens */
+      background: #a78295;   
+      z-index: -1; /* Adjust the z-index value to send it to the back */
+    }
+
   #smallLeftOval {
     position: absolute;
-    left: -25px;
-    top: 350px;
-    width: 316px;
-    height: 514px;
-    background: #d4ba9b;
-    background-blend-mode: normal;
-    transform: rotate(-55deg);
-    border-radius: 50%;
-  }
+    left: -20%; /* Adjust the left position based on your design */
+    top: 75%; /* Adjust the top position based on your design */
+    width: 60%; /* Adjust the width based on your design */
+    padding-bottom: 60%; /* Maintain a 1.25:1 aspect ratio (height = 1.25 * width) */
   
-  #smallRightOval {
-    position: absolute;
-    left: 1100px;
-    top: -320px;
-    width: 585px;
-    height: 514px;
-    background: #d4ba9b;
-    background-blend-mode: normal;
-    transform: rotate(-55deg);
-    border-radius: 50%;
   }
-  
-  #bigLeftOval {
-    position: absolute;
-    left: -140.56px;
-    top: -260.22px;
-    width: 500px;
-    height: 514px;
-    background: #a78295;
-    background-blend-mode: normal;
-    border-radius: 50%;
-  }
-  
-  #bigRightOval {
-    position: absolute;
-    left: 1100px;
-    top: 400px;
-    width: 585px;
-    height: 514px;
-    background: #a78295;
-    background-blend-mode: normal;
-    transform: rotate(26.999998deg);
-    border-radius: 50%;
-  }
-  
-  #home,
-  #about,
-  #project,
-  #contact {
-    position: absolute;
-    top: 40px;
-    font-family: "32_Sarchia_Dastnus_2";
-    font-size: 22px;
-    font-weight: 400;
-    letter-spacing: 0.18px;
-    color:#331d2c;
-    text-decoration: none;
-    z-index: 2; /* Set a higher z-index value */
-  }
-  
-  #home {
-    left: 50px;
-    width: 82px;
-    height: 30px;
-    line-height: 30px;
-  }
-  
-  #about {
-    left: 150px;
-    width: 94px;
-    height: 30px;
-    line-height: 30px;
-  }
-  
-  #project {
-    left: 230px;
-    width: 135px;
-    height: 36px;
-    text-align: center;
-    line-height: 36px;
-  }
-  
-  #contact {
-    left: 370px;
-    width: 112px;
-    height: 36px;
-    line-height: 36px;
-  }
-    
-  #middle-text {
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%, -50%);
-    width: 442px;
-    height: 122px;
-    color: #757575;
-    font-family: "Bell MT";
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
-    display: flex;
-    align-items: center;
-  }
-  
-  
+
   #contactUS {
-    position: absolute;
-    left: 60%; /* Move the element horizontally to the center */
-    top: 9.5%; /* Move the element vertically to the center */
-    transform: translate(-50%, -50%); /* Adjust the element's position based on its own dimensions */
-    width: 442px;
-    height: 122px;
-    color: #757575;
-    font-family: "Bell MT";
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
+    font-size: 3.5vh; /* Adjust font size for smaller screens */
+    color: #000000;
+      position: absolute;
+      top: 10%; /* Adjust vertical position for smaller screens */
+      left: 80%;
+
+  }
+
+  #middle-text {
+    font-size: 3vh; /* Adjust font size for smaller screens */
+    color: #000000;
+    top: 20%;
+    left: 55%;
+    
+  }
+
+  .form-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    margin-top: 30vh; /* Adjust this value as needed */
+    width: 100%; /* Adjust the width to make it larger on mobile */
+    height: 350px; /* Adjust the height to make it taller on mobile */
   }
-  
-  
-  .input-pair {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-  }
-  
-  .input-field {
-    width: calc(50% - 5px);
-    margin-right: 10px; /* Add margin to create space between input fields */
-    padding: 8px;
-    font-size: 14px;
-    border: none;
-    background-color: #d4ba9b;
-    color: #333;
-    border-radius: 20px;
-  }
-  
-  /* Style for the placeholders of input fields */
-  .input-field::placeholder {
-    color: #757575;
-    background-color: #D4BA9B;
-  }
-  /* Style for the message box container */
-  .message-box-container {
-    text-align: left; /* Align the container and its content to the right */
-    margin-top: 15px; /* Adjust margin for spacing */
-  }
-  
-  .message-box {
-    width: 180px; /* Set a constant width */
-    height: 100px; /* Set a constant height */
-    padding: 8px;
-    font-size: 14px;
-    border: none;
-    background-color: #d4ba9b;
-    color: #333;
-    border-radius: 20px;
-    resize: none; /* Disable resizing of the textarea */
-    margin-top: 15px; /* Adjust margin for spacing */
-  }
-  
-  /* Style for the send button */
-  /* Style for the send button */
-  .send-button {
-    text-align: left;
-    margin-top: 15px; /* Adjust margin for spacing */
-  }
-  
-  .send-button button {
-    padding: 10px 20px; /* Increase padding for a bigger button */
-    font-size: 14px; /* Increase font size */
-    background-color: #D4BA9B; /* Change background color */
-    border: none;
-    border-radius: 20px;
+
+  .burger {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    width: 30px;
+    height: 20px;
+    background: transparent;
     cursor: pointer;
-    color: #000000; /* Change text color */
+    display: block;
+    z-index: 9999;
   }
+  
+  .burger input {
+    display: none;
+  }
+  
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+  
+  .burger span:nth-of-type(1) {
+    top: 0;
+    transform-origin: center;
+  }
+  
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: center;
+  }
+  
+  .burger span:nth-of-type(3) {
+    top: 84%;
+    transform-origin: center;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(2) {
+    opacity: 0;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+
+  nav,
+#bigRightOval,
+#bigLeftOval {
+  display: none;
+}
+}
+
