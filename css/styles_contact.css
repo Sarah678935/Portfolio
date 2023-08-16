@@ -443,7 +443,8 @@ nav a {
   }
 
   .overlay-links a:hover {
-    background-color: #331d2c; /* Hover background color */
+    background-color: #a78295;
+    border-radius: 25%; 
   }
   nav,
 #bigRightOval,
