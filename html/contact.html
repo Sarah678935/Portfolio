@@ -4,29 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
-
     <link rel="stylesheet" href="../css/styles_contact.css">
+    
     <title>FullStackPros</title>
 </head>
-<body>
-  <div class="container"></div>
-    <nav>
-      <a id="home" href="..//html/home.html">Home</a>
-      <a id="contact" href="..//html/contact.html">Contact</a>
-      <a id="project" href="..//html/project.html">Project</a>
-      <a id="about" href="..//html/about.html">About</a>
-    
-      </nav>
-      <header>
 
-      <label class="burger" for="burger">
-        <input type="checkbox" id="burger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-  </header>
+<body>
+  <nav class="menu-links">
+    <a id="home" href="..//html/home.html">Home</a>
+    <a id="contact" href="..//html/contact.html">Contact</a>
+    <a id="project" href="..//html/project.html">Project</a>
+    <a id="about" href="..//html/about.html">About</a>
+  </nav>
   
+  <header>
+    <label class="burger" for="burger">
+      <input type="checkbox" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="overlay">
+      <div class="overlay-links">
+        <a id="home" href="..//html/home.html">Home</a>
+        <a id="contact" href="..//html/contact.html">Contact</a>
+        <a id="project" href="..//html/project.html">Project</a>
+        <a id="about" href="..//html/about.html">About</a>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+
     <div id="bigRightOval"></div>
     <div id="smallLeftOval"></div>
     <div id="bigLeftOval"></div>
@@ -53,18 +61,21 @@
 </div>
 
 <div class="social-media">
-  <button aria-label="Address">
+  <a href="https://www.google.com/maps/place/Erbil,+Iraq" aria-label="Address">
     <img src="../design/icons/Address.svg" alt="" class="icon">
-  </button>
-  <button aria-label="GitHub">
-    <img src="../design/icons/Github.svg" alt="" class="icon">
-  </button>
-  <button aria-label="Phone">
+  </a>
+  <a href="https://github.com/FullstackPros" aria-label="GitHub">
+    <button>
+      <img src="../design/icons/Github.svg" alt="" class="icon">
+    </button>
+  </a>
+  <a href="tel:07714884174" aria-label="Phone">
     <img src="../design/icons/Phone.svg" alt="" class="icon">
-  </button>
+  </a>
 </div>
     <script src="../js/app.js"></script>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  </div>
 
 </body>
 </html>

@@ -29,3 +29,20 @@ function applyDarkModeStyles() {
   
   // Attach event listener to handle future changes
   darkModeMediaQuery.addEventListener('change', handleColorSchemeChange);
+
+
+
+
+  ///// Burger button 
+  // Check if the viewport width is less than 768px (small screen)
+  const burger = document.getElementById('burger');
+  const overlay = document.querySelector('.overlay');
+  
+  burger.addEventListener('change', () => {
+    if (burger.checked) {
+      overlay.style.display = 'block';
+    } else {
+      overlay.style.display = 'none';
+    }
+  });
+  

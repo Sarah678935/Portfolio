@@ -396,6 +396,55 @@ nav a {
     top: 50%;
   }
 
+  
+
+  .burger:checked ~ .overlay {
+    display: block;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 2;
+  }
+  
+  .overlay-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   font-size: 2.9vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 90%; 
+    max-width: 300px;
+    
+    /* Centering using negative margins */
+    margin-top: -200px; /* Half of the container height */
+    margin-left: -200px; /* Half of the container width */
+  }
+  
+  
+
+  .overlay-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(237, 217, 217);
+    transition: background-color 0.3s ease;
+  }
+
+  .overlay-links a:hover {
+    background-color: #331d2c; /* Hover background color */
+  }
   nav,
 #bigRightOval,
 #bigLeftOval {
