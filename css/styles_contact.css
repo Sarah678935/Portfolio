@@ -295,7 +295,7 @@ nav a {
     }
   
     #smallRightOval {
-      width: 50%; /* Adjust the width for smaller screens */
+      width: 79%; /* Adjust the width for smaller screens */
       padding-bottom: 50%; /* Maintain aspect ratio for smaller screens */
       right: -10%; /* Adjust position for smaller screens */
       top: -10%; /* Adjust position for smaller screens */
@@ -307,8 +307,8 @@ nav a {
     position: absolute;
     left: -20%; /* Adjust the left position based on your design */
     top: 75%; /* Adjust the top position based on your design */
-    width: 60%; /* Adjust the width based on your design */
-    padding-bottom: 60%; /* Maintain a 1.25:1 aspect ratio (height = 1.25 * width) */
+    width: 79%; /* Adjust the width based on your design */
+    padding-bottom: 88%; /* Maintain a 1.25:1 aspect ratio (height = 1.25 * width) */
   
   }
 
