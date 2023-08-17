@@ -3,38 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=32_Sarchia_Dastnus_2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles_home.css">
     <title>FullStackPros</title>
 </head>
 <body>
 
-    <nav>
-    <a id="home" href="..//html/home.html">Home</a>
-    <a id="contact" href="..//html/contact.html">Contact</a>
-    <a id="project" href="..//html/project.html">Project</a>
-    <a id="about" href="..//html/about.html">About</a>
-    </nav>
-    
-    <div class="container">
-    <div id="midOval"></div>
-    <div id="bigOval"></div>
-   
-  
-    <div id="smallOval2"></div>
-    <div id="smallOval1"></div>
-    <div id="FullstackPros">FullstackPros</div>
-    <div id="middle-text">Dive into the portfolio to explore my creative endeavors.Each project tells a <br>unique
-        story,and I hope they ignite your imagination and spark curiosity,<br>
-        Thank you for visiting my creative showcase.
-         Let's make magic happen with<br> the stroke of creativity and the spirit of innovation.</div>
-         <div id="DesignDevelopment">Design<br>Development</div>
+    <nav class="menu-links">
+        <a id="home" href="..//html/home.html">Home</a>
+        <a id="about" href="..//html/about.html">About</a>
+        <a id="project" href="..//html/project.html">Project</a>
+        <a id="contact" href="..//html/contact.html">Contact</a>
+      </nav>
 
+      <header>
+        <label class="burger" for="burger">
+          <input type="checkbox" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="overlay">
+          <div class="overlay-links">
+            <a id="home" href="..//html/home.html">Home</a>
+            <a id="about" href="..//html/about.html">About</a>
+            <a id="project" href="..//html/project.html">Project</a>
+            <a id="contact" href="..//html/contact.html">Contact</a>
+          </div>
+        </div>
+      </header>
+      
 
-    <script src="../js/index.js"></script>
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-
+      <div class="container">
+            <div id="midOval"></div>
+            <div id="bigOval"></div>
+            <div class="header-content">
+                <div id="smallOval2"></div>
+                <div id="FullstackPros">FullStackPros</div>
+                <div id="smallOval1"></div>
+              </div>
+            <div id="middle-text">Dive into the portfolio to explore my creative endeavors.Each project tells a unique story<br>,and I hope they ignite your imagination and spark curiosity, Thank you for visiting my <br>creative showcase. Let's make magic happen with the stroke of creativity and the <br> spirit of innovation.</div>
+            <div id="DesignDevelopment">Design<br>Development</div>
+        </div>
+            
+         
+    <script src="../js/app.js"></script>
 </body>
 </html>
