@@ -141,11 +141,12 @@ nav a {
 @media screen and (max-width: 768px) {
 
 
-  body {
-    overflow-y: hidden;
-    overflow-x: hidden;
-    touch-action: none;
-    scroll-behavior:none;
+  html,body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  touch-action: none;
+  scroll-behavior:none;
   }
 
 
