@@ -289,7 +289,7 @@ nav a {
   }
   
 
-  }
+  
   
   .burger input:checked ~ span:nth-of-type(1) {
     transform: rotate(45deg);
