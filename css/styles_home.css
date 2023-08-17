@@ -1,7 +1,12 @@
+ 
 body {
   background-color: #fce9e9;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  touch-action: none;
+  scroll-behavior:none ;
+
   overflow-y: hidden;
   overflow-x: hidden;
   touch-action: none;
@@ -141,14 +146,33 @@ nav a {
 @media screen and (max-width: 768px) {
 
 
-  html,body {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  touch-action: none;
-  scroll-behavior:none;
+
+  html,
+  body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    touch-action: none;
+    scroll-behavior: none;
   }
 
+
+  #midOval {
+    
+    left: -30%; /* Adjust the left position based on your design */
+    top: 65%; /* Adjust the top position based on your design */
+    width: 60%; /* Adjust the width based on your design */
+    padding-bottom: 60%; /* Maintain a 1.25:1 aspect ratio (height = 1.25 * width) */
+    transform: rotate(-55deg);
+  }
+
+  #bigOval {
+    right: -10%; /* Adjust the left position based on your design */
+    top: -30%; /* Adjust the top position based on your design */
+    width: 60%;
+    padding-bottom: 60%;
+    transform: rotate(50deg);
+  }
 
 
   #midOval {
@@ -193,6 +217,7 @@ nav a {
     left: 40%;
     top: 25%;
     width: 60%;
+
     font-size: 10vw;
   }
   
@@ -201,6 +226,7 @@ nav a {
     left: 53%;
     top: 50%;
     width: 85%; 
+
     font-size: 3.8vw;
   }
 
@@ -238,6 +264,14 @@ nav a {
     transform-origin: center;
   }
   
+
+  
+  
+  .burger span:nth-of-type(1) {
+    top: 0;
+    transform-origin: center;
+  }
+  
   .burger span:nth-of-type(2) {
     top: 50%;
     transform: translateY(-50%);
@@ -247,6 +281,14 @@ nav a {
   .burger span:nth-of-type(3) {
     top: 84%;
     transform-origin: center;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  
+
   }
   
   .burger input:checked ~ span:nth-of-type(1) {
@@ -313,3 +355,4 @@ nav a {
   display: none;
 }
 }
+

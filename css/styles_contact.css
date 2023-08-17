@@ -431,7 +431,6 @@ nav a {
     margin-left: -200px; /* Half of the container width */
   }
   
-  
 
   .overlay-links a {
     display: block;
@@ -443,6 +442,7 @@ nav a {
   }
 
   .overlay-links a:hover {
+
  background-color: rgba(167, 130, 149, 0.5);
  border-radius: 25%; 
   }
