@@ -1,20 +1,11 @@
-
-@font-face {
-  font-family: "Edu SA Beginner";
-  src: url('../fonts/EduSABeginner-VariableFont_wght.ttf') format('truetype'),;
-  /* Add more src lines for other font file formats if needed */
-}
 /* Common styles for all screen sizes */
 body {
   background-color: #fce9e9;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  scroll-behavior:none ;
-
 }
 
-/* Container to restrict content within 1920x1080 on larger screens */
 .container {
   max-width: 1920px;
   margin: 0 auto; /* Center the content horizontally */
@@ -44,13 +35,6 @@ nav a {
   line-height: 30px;
   margin: 0 10px; /* Add equal spacing around links */
 }
-
-/* Media query for responsiveness */
-@media (max-width: 1200px) {
- 
-}
-
-/* Styles for larger screens (PC and laptops) */
 #midOval {
   position: absolute;
   left: -14%;
@@ -71,7 +55,6 @@ nav a {
   background: #d4ba9b;
   border-radius: 50%;
 }
-
 
 #smallOval2 {
   position: absolute;
