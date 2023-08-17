@@ -1,37 +1,37 @@
-
-@font-face {
-  font-family: "Edu SA Beginner";
-  src: url('../fonts/EduSABeginner-VariableFont_wght.ttf') format('truetype'),;
-  /* Add more src lines for other font file formats if needed */
-}
-/* Common styles for all screen sizes */
 body {
   background-color: #fce9e9;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  touch-action: none;
   scroll-behavior:none ;
 
 }
 
-/* Container to restrict content within 1920x1080 on larger screens */
 .container {
   max-width: 1920px;
-  margin: 0 auto; /* Center the content horizontally */
+  margin: 0 auto;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1920x1080, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
+  padding-bottom: 10px;
 }
+
 
 nav {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Center the navigation horizontally */
+  justify-content: flex-start;
   margin-top: 10px;
+  top: 1%;
+  position: fixed; /* Add this to make it stay at the top */
+  left: 0; /* Adjust this to position it on the left */
+  width: 100%; /* Take up the entire width */
+  z-index: 999; /* Make sure it's on top */
 }
 
-/* Common styles for home, about, project, contact */
+/* Adjust the styles for your navigation links */
 nav a {
   color: #331d2c;
   text-decoration: none;
@@ -39,201 +39,272 @@ nav a {
   font-size: 22px;
   font-weight: 400;
   letter-spacing: 0.18px;
-  z-index: 2; /* Set a higher z-index value */
-  height: 30px;
-  line-height: 30px;
-  margin: 0 10px; /* Add equal spacing around links */
+  margin: 0 10px;
 }
 
-/* Media query for responsiveness */
-@media (max-width: 1200px) {
- 
-}
-
-/* Styles for larger screens (PC and laptops) */
 #midOval {
   position: absolute;
-  left: -14%;
-  top: 500px;
-  width: 30%;
-  padding-bottom: 30%;
+  left: -18%; /* Adjust the left position based on your design */
+  top: 60%; /* Adjust the top position based on your design */
+  width: 40%; /* Adjust the width based on your design */
+  padding-bottom: 40%; /* Maintain a 1.25:1 aspect ratio (height = 1.25 * width) */
   background: #331d2c;
-  border-radius: 50%;
+  background-blend-mode: normal;
   transform: rotate(-55deg);
+  border-radius: 50%;
 }
+
 
 #bigOval {
   position: absolute;
-  left: 65%;
-  top: -200px;
+  right: -10%; /* Adjust the left position based on your design */
+  top: -45%; /* Adjust the top position based on your design */
   width: 50%;
   padding-bottom: 50%;
   background: #d4ba9b;
+  background-blend-mode: normal;
+  transform: rotate(50deg);
   border-radius: 50%;
 }
 
 
-#smallOval2 {
-  position: absolute;
-  left: 10%;
-  top: 25px;
-  width: 3%; /* Adjust the width to make it smaller */
-  padding-bottom: 3%; /* Adjust the aspect ratio */
-  background: #d4ba9b;
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 80px; /* Adjust as needed */
+}
+
+#smallOval2,
+#smallOval1 {
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  transform: translateX(900%); /* Keep the transform property as is or adjust as needed */
+}
+
+#smallOval2 {
+  background: #d4ba9b;
+  margin-right: 10px; /* Spacing between ovals */
 }
 
 #smallOval1 {
-  position: absolute;
-  left: 50%;
-  top: 25px;
-  width: 3%; /* Adjust the width to make it smaller */
-  padding-bottom: 3%; /* Adjust the aspect ratio */
   background: #331d2c;
-  border-radius: 50%;
-  transform: translateX(220%);
+  margin-left: 10px; /* Spacing between ovals */
 }
 
 #FullstackPros {
-  position: absolute;
-  left: 50%; /* Move the element to the center horizontally */
-  top: 25px;
-  width: 40%;
   font-size: 2vw;
   color: #331d2c;
-  font-family: "Edu SA Beginner";
+  font-family: "32_Sarchia_Dastnus_2";
   font-weight: 400;
-  transform: translateX(-20%); /* Center the element using transform */
+  margin: 0 10px; /* Spacing between text and ovals */
 }
 
 #middle-text {
   position: absolute;
-  left: 21%;
-  top: 50%;
+  left: 61%;
+  top: 62%;
+  transform: translate(-50%, -50%);
   width: 80%;
-  font-size: 1.5vw;
-  font-family: "Edu SA Beginner";
+  height: auto;
+  color: #331d2c;
+  font-size: 2vw;
+  font-family: "Bell MT";
   font-weight: 400;
-  line-height: 5vw;
+  display: flex;
+  align-items: center;
 }
 
 #DesignDevelopment {
   position: absolute;
-  left: 21%;
-  top: 20%;
+  left: 51%;
+  top: 37%;
+  transform: translate(-50%, -50%);
   width: 60%;
   font-size: 4vw;
-  font-family: "Edu SA Beginner";
+  font-family: "31_Sarchia_Dastnus_1";
   font-weight: 400;
+  height: auto;
+  color: #331d2c;
+  display: flex;
+  align-items: center;
 }
 
+.burger input[type="checkbox"],
+
+.overlay-links {
+  display: none; }
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
 
 
-  #middle-text {
-    position: absolute;
-    left: 21%;
-    top: 50%;
-    width: 80%;
-    font-size: 1.5vw;
-    font-family: "Edu SA Beginner";
-    font-weight: 400;
-    line-height: 5vw;
-  }
-
-  #FullstackPros {
-    position: absolute;
-    left: 50%; /* Move the element to the center horizontally */
-    top: 25px;
-    width: 40%;
-    font-size: 2vw;
-    color: #331d2c;
-    font-family: "Edu SA Beginner";
-    font-weight: 400;
-    transform: translateX(-20%); /* Center the element using transform */
-  }
-
-  #smallOval1 {
-    position: absolute;
-    left: 50%;
-    top: 25px;
-    width: 3%; /* Adjust the width to make it smaller */
-    padding-bottom: 3%; /* Adjust the aspect ratio */
-    background: #331d2c;
-    border-radius: 50%;
-    transform: translateX(220%);
-  }
-
-  #smallOval2 {
-    position: absolute;
-    left: 10%;
-    top: 25px;
-    width: 3%; /* Adjust the width to make it smaller */
-    padding-bottom: 3%; /* Adjust the aspect ratio */
-    background: #d4ba9b;
-    border-radius: 50%;
-    transform: translateX(900%); /* Keep the transform property as is or adjust as needed */
-  }
-
-  #bigOval {
-    position: absolute;
-    left: 65%;
-    top: -200px;
-    width: 50%;
-    padding-bottom: 50%;
-    background: #d4ba9b;
-    border-radius: 50%;
+  body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    touch-action: none;
+    scroll-behavior:none ;
   }
 
   #midOval {
-    position: absolute;
-    left: -14%;
-    top: 500px;
-    width: 30%;
-    padding-bottom: 30%;
-    background: #331d2c;
-    border-radius: 50%;
+    
+    left: -30%; /* Adjust the left position based on your design */
+    bottom: 0%; /* Adjust the top position based on your design */
+    width: 70%; /* Adjust the width based on your design */
+    padding-bottom: 70%; /* Maintain a 1.25:1 aspect ratio (height = 1.25 * width) */
     transform: rotate(-55deg);
+    z-index: -1;
   }
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Center the navigation horizontally */
-    margin-top: 10px;
+
+  #bigOval {
+    right: -10%; /* Adjust the left position based on your design */
+    top: -10%; /* Adjust the top position based on your design */
+    width: 60%;
+    padding-bottom: 60%;
+    transform: rotate(50deg);
   }
   
-  /* Common styles for home, about, project, contact */
-  nav a {
-    color: #331d2c;
+  
+  .header-content {
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+  }
+
+  #smallOval2,
+  #smallOval1 {
+    margin: 2%; /* Adjusted spacing between ovals */
+  }
+
+  #FullstackPros {
+    font-size: 5vw;
+    margin: 0; /* No margin around text */
+  }
+
+  #DesignDevelopment {
+
+    left: 40%;
+    top: 25%;
+    width: 60%;
+    font-size: 5vw;
+  }
+  
+  #middle-text {
+
+    left: 53%;
+    top: 50%;
+    width: 85%; 
+    font-size: 3.8vw;
+  }
+
+  .burger {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    width: 30px;
+    height: 20px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+    z-index: 9999;
+  }
+  
+  .burger input {
+    display: none;
+  }
+  
+
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+  
+  .burger span:nth-of-type(1) {
+    top: 0;
+    transform-origin: center;
+  }
+  
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: center;
+  }
+  
+  .burger span:nth-of-type(3) {
+    top: 84%;
+    transform-origin: center;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(2) {
+    opacity: 0;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+
+  .burger:checked ~ .overlay {
+    display: block;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 2;
+  }
+  
+  .overlay-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   font-size: 2.9vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 90%; 
+    max-width: 300px;
+    margin-top: -200px; /* Half of the container height */
+    margin-left: -200px; /* Half of the container width */
+  }
+  
+
+  .overlay-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
     text-decoration: none;
-    font-family: "32_Sarchia_Dastnus_2";
-    font-size: 22px;
-    font-weight: 400;
-    letter-spacing: 0.18px;
-    z-index: 2; /* Set a higher z-index value */
-    justify-content: flex-start;
-    height: 30px;
-    line-height: 30px;
-    margin: 0 10px; /* Add equal spacing around links */
+    color: rgb(237, 217, 217);
+    transition: background-color 0.3s ease;
   }
-  
- 
-  
-   
-  .container {
-    max-width: 1920px;
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1920x1080, 1fr));
-    grid-gap: 20px;
-  }
-  
-  /* Default header styles */
-  /* Header container with responsive layout */
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 10px;
-  }
+
+  .overlay-links a:hover {
+    background-color: rgba(167, 130, 149, 0.5);
+    border-radius: 25%; 
+     }
+  nav
+   {
+  display: none;
+}
+}
