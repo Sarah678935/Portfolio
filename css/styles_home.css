@@ -4,7 +4,7 @@ body {
   padding: 0;
   overflow: hidden;
   touch-action: none;
-  scroll-behavior:none ;
+  scroll-behavior:none;
 
 }
 
@@ -145,23 +145,32 @@ nav a {
     margin: 0;
     padding: 0;
     touch-action: none;
-    scroll-behavior:none ;
+    scroll-behavior:none;
   }
+  .disable-scrolling {
+      overflow: hidden;
+      touch-action: none;
+      scroll-behavior: none;
+    }
+    
+  }
+
 
   #midOval {
     
     left: -30%; /* Adjust the left position based on your design */
-    bottom: 0%; /* Adjust the top position based on your design */
-    width: 70%; /* Adjust the width based on your design */
-    padding-bottom: 70%; /* Maintain a 1.25:1 aspect ratio (height = 1.25 * width) */
-    transform: rotate(-55deg);
+    bottom: -23%; /* Adjust the top position based on your design */
+    width: 60%; /* Adjust the width based on your design */
+    padding-bottom: 70%;
+    transform: rotate(-50deg);
+
     z-index: -1;
   }
 
   #bigOval {
-    right: -10%; /* Adjust the left position based on your design */
+    right: -19%; /* Adjust the left position based on your design */
     top: -10%; /* Adjust the top position based on your design */
-    width: 60%;
+    width: 100%;
     padding-bottom: 60%;
     transform: rotate(50deg);
   }
@@ -188,7 +197,7 @@ nav a {
     left: 40%;
     top: 25%;
     width: 60%;
-    font-size: 5vw;
+    font-size: 10vw;
   }
   
   #middle-text {

@@ -46,3 +46,13 @@ function applyDarkModeStyles() {
     }
   });
   
+
+  // Function to prevent scrolling
+function preventScroll(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  return false;
+}
+
+// Add event listener to the scrollable element
+document.body.addEventListener('wheel', preventScroll, { passive: false });
