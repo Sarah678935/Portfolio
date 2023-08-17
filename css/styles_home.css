@@ -2,7 +2,8 @@ body {
   background-color: #fce9e9;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
   touch-action: none;
   scroll-behavior:none;
 
@@ -141,19 +142,12 @@ nav a {
 
 
   body {
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
     touch-action: none;
     scroll-behavior:none;
   }
-  .disable-scrolling {
-      overflow: hidden;
-      touch-action: none;
-      scroll-behavior: none;
-    }
-    
-  }
+
 
 
   #midOval {
@@ -168,11 +162,12 @@ nav a {
   }
 
   #bigOval {
-    right: -19%; /* Adjust the left position based on your design */
+    right: -29%; /* Adjust the left position based on your design */
     top: -10%; /* Adjust the top position based on your design */
     width: 100%;
     padding-bottom: 60%;
     transform: rotate(50deg);
+    z-index: -1;
   }
   
   
