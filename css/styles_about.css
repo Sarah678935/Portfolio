@@ -836,7 +836,7 @@ text-align: center;
   }
 
   .overlay-links a:hover {
-    background-color: rgba(167, 130, 149, 0.5);
+    background-color: rgba(167, 130, 149, 0.6);
     border-radius: 25%; 
      }
   nav
