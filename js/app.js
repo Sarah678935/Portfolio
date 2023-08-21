@@ -25,7 +25,7 @@ function applyDarkModeStyles() {
   }
   
   // Initial call to apply styles based on current color scheme preference
-  handleColorSchemeChange(darkModeMediaQuery);
+  handleColorSchemeChange(darkModeMediaQuery); 
   
   // Attach event listener to handle future changes
   darkModeMediaQuery.addEventListener('change', handleColorSchemeChange);
@@ -46,3 +46,10 @@ function applyDarkModeStyles() {
     }
   });
   
+
+
+
+
+
+
+

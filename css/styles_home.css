@@ -41,6 +41,14 @@ nav a {
   margin: 0 10px;
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 80px; /* Adjust as needed */
+}
+
 #midOval {
   position: absolute;
   left: -18%; /* Adjust the left position based on your design */
@@ -67,13 +75,7 @@ nav a {
 }
 
 
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 80px; /* Adjust as needed */
-}
+
 
 #smallOval2,
 #smallOval1 {
