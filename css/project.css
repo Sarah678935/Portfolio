@@ -8,11 +8,11 @@
     overflow: hidden;
     scroll-behavior: none;
     touch-action: none ;
+    box-sizing: border-box;
   }
   
  
   .burger input[type="checkbox"],
-  
   .overlay-links {
     display: none; }
   
@@ -42,20 +42,21 @@
   }
   
   
-  #oval {
+  .oval {
     position: absolute;
-    right: -55%;
-    top: -70%;
-    width: 60%;
-    padding-bottom: 55%;
-    background: #331d2c;
+    margin-left: 100%; /* Adjust the right distance from the right edge of the viewport */
+    margin-bottom: 0%; /* Adjust the top distance from the top edge of the viewport */
+    width: 90%; 
+    top: 0%;
+    padding-bottom: 90%;
+    background:  #d4ba9b;
     border-radius: 50%;
     background-blend-mode: normal;
     transform: translateX(-50%) rotate(70deg);
+    background-blend-mode: normal;
     z-index: -4;
   }
-  
-  #ourProject {
+  .ourProject {
     position: absolute;
     right: -74%; /* Center horizontally */
     top: 35%;
@@ -63,11 +64,12 @@
     width: 100%;
     text-align: center;
     font-family: Inter;
+    color: #fce9e9;
     font-size: 3.8vw; /* Use vw for responsive font size */
     font-weight: 400;
   }
   
-  #linestick {
+  .linestick {
     position: absolute;
     left: 115%; /* Convert to vw */
     bottom: 55.08vh; /* Convert to vh */
@@ -77,14 +79,14 @@
     transform: translateX(-50%);
   }
   
-  .project-container {
-    position: relative; /* Add this line to set the position for pseudo-element */
-    left: 65.45vw; /* Convert to vw */
-    top: 47.06vh; /* Convert to vh */
-    width: 23.33vw; /* Convert to vw */
-    height: 20.98vh; /* Convert to vh */
-    font-size: 3.5vh;
   
+  .project-container {
+    position: relative;
+    left: 65.45vw;
+    top: 47.06vh;
+    width: 23.33vw;
+    height: 20.98vh;
+    font-size: 3.5vh;
   }
   
   .project-con {
@@ -94,33 +96,44 @@
     text-decoration: none;
     color: #331d2c;
     cursor: pointer;
-    position: relative;
+    position: relative; /* Add this line to set position for pseudo-element */
   }
   
-  .project-con::before {
-    content: "";
+
+  .project-con {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #331d2c;
+    cursor: pointer;
+    position: relative; /* Add this line to set position for pseudo-element */
+  }
+  
+  .project-img {
     position: absolute;
-    margin-top: -10%;
-    margin-left: -250%;
-    width: 500px;
+    top: 50%;
+    left: -250%;
+    width: 550px;
     height: 500px;
-    background-size:contain; /* Adjust to 'cover' or specific dimensions as needed */
-    background-position: left; /* Adjust the position of the image */
-    background-repeat: no-repeat;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
-
+    margin: auto;
+    transform: translateY(-50%); /* Center vertically */
+    border: 2px solid #331d2c;
   }
-  .project-con:hover::before {
+  
+  .project-con:hover .project-img {
     opacity: 1;
   }
   
   
-  /* Define different background images for each project */
-  .project-con:nth-child(1):hover::before {
-    background-image: url('../design/imgs/portfolio.svg');
-  }
+
+  
+ 
+
+
 
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
@@ -134,18 +147,57 @@
     touch-action: none;
     scroll-behavior: none;
   }
-
-
-
+  .ourProject {
+    right: 50%;
+    font-size: 1rem;
+    transform: translateX(-50%);
+    top: 20%;
+  }
   
+  .linestick {
+    left: 50%; 
+    top: 20%;
+    margin-top: 30%;
+    transform: translateX(-50%);
+    bottom: 5%; 
+  }
+ 
+  .project-img {
+    display: none;
+  }
   
-  .header-content {
-    flex-direction: row;
-    justify-content: center;
-    height: auto;
+  .ourProject {
+    text-align: center; /* Center text */
+    font-size: 1.5rem; /* Adjust font size */
+    margin-top: 10px; /* Add spacing from the top */
   }
 
+  /* Adjust the styles for the horizontal line */
+  .linestick {
+    left: 50%; 
+    top: 20%;
+    margin-top: 30%;
+    transform: translateX(-50%);
+    bottom: 5%; 
+  }
+
+  .project-container {
+    padding: 0;
+    position: relative; /* Use 'relative' positioning */
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 20%; /* Adjust as needed */
+  }
+
+  /* Adjust the styles for the project links */
+  .project-con {
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    border-top: 1px solid #331d2c;
+    display: flex;
+    align-items: center;
   
+  }
 
   .burger {
     position: absolute;
@@ -255,11 +307,15 @@
   
 
   .overlay-links a {
-    display: block;
+    display: flex;
     padding: 10px;
     text-align: center;
+    flex-direction: column;
     text-decoration: none;
     color: rgb(237, 217, 217);
+    top: 50%;
+   left: 50%;
+   transform: translateX(-50%);
     transition: background-color 0.3s ease;
   }
 
