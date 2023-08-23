@@ -8,6 +8,11 @@ body {
   scroll-behavior:none ;
 
 }
+ 
+.burger input[type="checkbox"],
+.overlay-links {
+  display: none; }
+
 
 .container {
   max-width: 1920px;
@@ -37,7 +42,7 @@ nav a {
   color: #331d2c;
   text-decoration: none;
   font-family: "32_Sarchia_Dastnus_2";
-  font-size: 22px;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0.18px;
   margin: 0 10px;

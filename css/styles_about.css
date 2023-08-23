@@ -20,25 +20,28 @@ body {
 }
 
 
+/* Styles for navigation */
 nav {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Center the navigation horizontally */
+  justify-content: flex-start;
   margin-top: 10px;
+  top: 1%;
+  position: fixed; /* Add this to make it stay at the top */
+  left: 0; /* Adjust this to position it on the left */
+  width: 100%; /* Take up the entire width */
+  z-index: 999; /* Make sure it's on top */
 }
 
-/* Common styles for home, about, project, contact */
+/* Adjust the styles for your navigation links */
 nav a {
   color: #331d2c;
   text-decoration: none;
   font-family: "32_Sarchia_Dastnus_2";
-  font-size: 4vh;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0.18px;
-  z-index: 2; /* Set a higher z-index value */
-  height: 30px;
-  line-height: 30px;
-  margin: 0 20px; /* Add equal spacing around links */
+  margin: 0 10px;
 }
 
 
@@ -433,14 +436,14 @@ text-align: center;
 
     #middle-About {
       top: 16%;
-      font-size: 5.5vw !important;
+      font-size: 5.5vw ;
     }
   
     #IntherealmofdesignWedra {
       left: 50%;
       top: 25%;
       width: 90%; /* Adjust the width based on your design */
-      font-size: 3vw; /* Responsive font size based on viewport width */
+      font-size: 3.8vw; /* Responsive font size based on viewport width */
     }
     
     #bigoval {
@@ -465,7 +468,7 @@ text-align: center;
     #ourskills {
       font-size: 5vw; /* Adjust font size for mobile */
       top: 50%; /* Adjust the vertical position */
-      left: 22%; /* Center the element horizontally */
+      left: 20%; /* Center the element horizontally */
       transform: translate(-50%, -50%); /* Center both horizontally and vertically */
     }
     #straightLine {
