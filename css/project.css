@@ -170,10 +170,10 @@ nav a {
   }
   .ourProject {
     position: absolute;
-    left: 25%;
+    left: 21%;
     font-size: 2rem;
     color: #331d2c;
-    top: 28%; /* Adjust the top position as needed */
+    top: 29.8%; /* Adjust the top position as needed */
   }
   
   .linestick {
