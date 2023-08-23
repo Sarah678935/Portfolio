@@ -94,7 +94,7 @@ nav a {
 
 
 .project-container {
-  position: relative;
+  position: absolute;
   left: 65.45vw;
   top: 47.06vh;
   width: 23.33vw;
@@ -102,16 +102,6 @@ nav a {
   font-size: 3.5vh;
 }
 
-.project-con {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-  text-decoration: none;
-  color: #331d2c;
-  cursor: pointer;
-  position: relative;
-  /* Add this line to set position for pseudo-element */
-}
 
 
 .project-con {
@@ -121,7 +111,6 @@ nav a {
   text-decoration: none;
   color: #331d2c;
   cursor: pointer;
-  position: relative;
   /* Add this line to set position for pseudo-element */
 }
 
@@ -165,53 +154,47 @@ nav a {
   }
 
 
-  .project-img {
-    display: none;
-  }
+
   .ourProject {
     position: absolute;
     left: 21%;
     font-size: 2rem;
     color: #331d2c;
-    top: 29.8%; /* Adjust the top position as needed */
+    top: 29.8%;
+    /* Adjust the top position as needed */
   }
-  
+
   .linestick {
-    left: 50%; 
-    top: 35%; /* Adjust the top position as needed */
+    left: 50%;
+    top: 35%;
   }
-  
-  .project-container {
-    width: 100%; /* Full width on small screens */
-    left: 0; /* Reset horizontal position */
-    padding: 0;
-    margin: 0; /* Reset margins */
-  }
-  
-  .project-con {
-    margin: 0; /* Reset margins */
-    padding: 10px 0;
-    font-size: 1rem;
-    border-top: 1px solid #331d2c;
-    display: flex;
-    align-items: center;
-  }
-  
 
   .project-container {
+    width: 100%;
+    left: 0%;
+    top: 38%;
     padding: 0;
-    position: relative;
-    margin: 0 auto;
+    margin: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
   }
 
   .project-con {
-    margin: 10px 0;
-    padding: 10px 0;
-    font-size: 1rem;
-    border-top: 1px solid #331d2c;
+    margin: 2% 0;
+    padding: 3% 0;
+    font-size: 1.4rem;
+    padding-top: -10%;
     display: flex;
+    border-bottom: 2px solid #502141;
+    flex-direction: row;
     align-items: center;
+  }
 
+
+  .project-img {
+    display: none;
   }
 
   .burger {
