@@ -74,7 +74,7 @@ nav a {
 #ourskills {
   position: absolute;
   top: 30%; /* Adjust the vertical position */
-  left: 80%; /* Center the element horizontally */
+  left: 78%; /* Center the element horizontally */
   transform: translate(-50%, -50%); /* Center both horizontally and vertically */
   width: 90%; /* Adjust the width based on your design */
   font-family: Inter;
@@ -89,10 +89,11 @@ nav a {
   left: 78%;
   top: 35%; /* Adjust the top position based on your design */
   width: 20%; /* Adjust the width based on your design */
-  height: 1px; /* Adjust the height based on your design */
+  height: 3px; /* Adjust the height based on your design */
   background-color: #000; /* Use background-color instead of color */
   transform: translateX(-50%); /* Center the element horizontally */
 }
+
 #IntherealmofdesignWedra {
   position: absolute;
   color: #000;
@@ -453,16 +454,16 @@ transform: translate(-50%, -50%);
     }
 
     #straightLine {
-      top: 54vh; /* Adjust top position for mobile */
-      left:52%;
-      height: 3px; /* Increase height for mobile screens */
-      width: 32%;
+      left: 50%; /* Adjust the left position for mobile */
+      top: 55%; /* Adjust the top position for mobile */
+      width: 40%; /* Adjust the width for mobile */
+      height: 2px; /* Keep the same height for mobile */
     }
 
 
     #mongoDb {
       left: 45%;
-      top: 60.5%;
+      top: 61%;
       font-size: 2.2vw;
   }
     
@@ -477,7 +478,7 @@ transform: translate(-50%, -50%);
     #mysql {
       color: #fce9e9;
       left: 25%;
-      top: 60.5%;
+      top: 61%;
       font-size: 2.2vw;
     }
     
@@ -490,7 +491,7 @@ transform: translate(-50%, -50%);
     
     #bootstrap {
       left: 64%;
-      top: 60.5%;
+      top: 61%;
       font-size: 2.5vw;
     }
     
@@ -502,7 +503,7 @@ transform: translate(-50%, -50%);
     }
     
     #expressjs {
-      top: 65.5%;
+      top: 66%;
       left: 64%;
       font-size: 2.5vw;
     
@@ -516,7 +517,7 @@ transform: translate(-50%, -50%);
     }
     
     #css {
-      top: 65.5%;
+      top: 66%;
       left: 48%;
       font-size: 2.4vw;
     }
@@ -529,7 +530,7 @@ transform: translate(-50%, -50%);
     }
     
     #nodejs {
-      top: 65.5%;
+      top: 66%;
       left: 24%;
       font-size: 2.4vw;  
     }
@@ -542,7 +543,7 @@ transform: translate(-50%, -50%);
     }
     
     #git {
-      top: 70.5%;
+      top: 71%;
       left: 26%;
       font-size: 2.5vw;
     }
@@ -555,7 +556,7 @@ transform: translate(-50%, -50%);
     }
     
     #javascript {
-      top: 70.5%;
+      top: 71%;
       left: 45%;
       font-size: 2.2vw;
  
@@ -571,7 +572,7 @@ transform: translate(-50%, -50%);
   
   #html5 {
 
-    top: 70.5%;
+    top: 71%;
     left: 66%;
       font-size: 2.5vw;
     }
