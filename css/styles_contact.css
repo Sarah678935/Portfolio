@@ -430,15 +430,13 @@ nav a {
     padding: 0;
     width: 90%; 
     max-width: 300px;
-    
-    /* Centering using negative margins */
-    margin-top: -200px; /* Half of the container height */
-    margin-left: -200px; /* Half of the container width */
+    margin-top: -60%; /* Half of the container height */
+    margin-left: -44%; /* Half of the container width */
   }
   
 
   .overlay-links a {
-    display: block;
+    display: flex;
     padding: 10px;
     text-align: center;
     text-decoration: none;
@@ -447,10 +445,9 @@ nav a {
   }
 
   .overlay-links a:hover {
-
- background-color: rgba(167, 130, 149, 0.5);
- border-radius: 25%; 
-  }
+    background-color: rgba(167, 130, 149, 0.5);
+    border-radius: 25%; 
+     }
   nav,
 #bigRightOval,
 #bigLeftOval {
