@@ -1,4 +1,4 @@
-body {
+abody {
   background-color: #fce9e9;
   margin: 0;
   padding: 0;
@@ -133,9 +133,11 @@ nav a {
   align-items: center;
 }
 
+
 .burger input[type="checkbox"],
 
-.overlay-links {
+.overlay-links
+ {
   display: none; }
 
 /* Media query for responsiveness */
@@ -316,22 +318,21 @@ nav a {
   }
   
   .overlay-links {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-   font-size: 2.9vh;
+    position: fixed;
+    top: 30%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw; /* Adjust font size for smaller screens */
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
-    width: 90%; 
-    max-width: 300px;
-    margin-top: -60%; /* Half of the container height */
-    margin-left: -44%; /* Half of the container width */
+    width: 80%; /* Adjust width for smaller screens */
+    max-width: 300px; /* Set a maximum width to prevent overextension */
+    margin: 0; /* Remove margins for centering */
+    z-index: 3; /* Increase z-index to make sure it's on top of other elements */
   }
-  
-
   .overlay-links a {
     display: flex;
     padding: 10px;
@@ -339,13 +340,14 @@ nav a {
     text-decoration: none;
     color: rgb(237, 217, 217);
     transition: background-color 0.3s ease;
+    margin-bottom: 4%; /* Add some spacing between links */
   }
 
   .overlay-links a:hover {
     background-color: rgba(167, 130, 149, 0.5);
-    border-radius: 25%; 
-     }
-  nav
+    border-radius: 25%;
+  }
+    nav
    {
   display: none;
 }
