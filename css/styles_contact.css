@@ -438,7 +438,7 @@ nav a {
     top: 35%;
     left: 40%;
     transform: translate(-50%, -50%);
-    font-size: 4vw; /* Adjust font size for smaller screens */
+    font-size: 6vw; /* Adjust font size for smaller screens */
     text-align: center;
     display: flex;
     flex-direction: column;
