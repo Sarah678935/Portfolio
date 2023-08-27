@@ -1,3 +1,4 @@
+/* Common styles for all screen sizes */
 
 body {
   background-color: #fce9e9;
@@ -23,26 +24,20 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 10px;
-  top: 1%;
-  position: fixed; /* Add this to make it stay at the top */
-  left: 0; /* Adjust this to position it on the left */
-  width: 100%; /* Take up the entire width */
-  z-index: 999; /* Make sure it's on top */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
-/* Adjust the styles for your navigation links */
 nav a {
   color: #331d2c;
   text-decoration: none;
-  font-family: "32_Sarchia_Dastnus_2";
-  font-size: 22px;
+  font-size: 2vw; /* Adjust font size using vw units */
   font-weight: 400;
-  letter-spacing: 0.18px;
-  margin: 0 10px;
+  padding: 10px 20px;
 }
-
-
 
 #bigoval {
   position: absolute;
@@ -680,7 +675,7 @@ transform: translate(-50%, -50%);
       top: 25%;
       left: 30%;
       transform: translate(-50%, -50%);
-      font-size: 6vw; /* Adjust font size for smaller screens */
+      font-size: 4vw; /* Adjust font size for smaller screens */
       text-align: center;
       display: flex;
       flex-direction: column;

@@ -16,32 +16,23 @@ body {
 
 
 
-/* Styles for navigation */
 nav {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 10px;
-  top: 1%;
   position: fixed;
-  /* Add this to make it stay at the top */
+  top: 0;
   left: 0;
-  /* Adjust this to position it on the left */
   width: 100%;
-  /* Take up the entire width */
   z-index: 999;
-  /* Make sure it's on top */
 }
 
-/* Adjust the styles for your navigation links */
 nav a {
   color: #331d2c;
   text-decoration: none;
-  font-family: "32_Sarchia_Dastnus_2";
-  font-size: 2rem;
+  font-size: 2vw; /* Adjust font size using vw units */
   font-weight: 400;
-  letter-spacing: 0.18px;
-  margin: 0 10px;
+  padding: 10px 20px;
 }
 
 .oval {
@@ -63,33 +54,26 @@ nav a {
 
 .ourProject {
   position: absolute;
-  right: -74%;
-  /* Center horizontally */
+  left: 75%;
   top: 35%;
   transform: translateX(-50%);
-  /* Center horizontally */
   width: 100%;
   text-align: center;
   font-family: Inter;
-  color: #fce9e9;
-  font-size: 3.8vw;
-  /* Use vw for responsive font size */
+  color: #331d2c;
+  font-size: 3.5vw;
   font-weight: 400;
   z-index: 1;
 }
 
-.linestick {
+#straightLine {
   position: absolute;
-  left: 115%;
-  /* Convert to vw */
-  bottom: 55.08vh;
-  /* Convert to vh */
-  width: 100%;
-  /* Convert to vw */
-  height: 0.44vh;
-  /* Convert to vh */
-  background: url(../design/icons/linestick.png) no-repeat;
-  transform: translateX(-50%);
+  left: 75%;
+  top: 45%; /* Adjust the top position based on your design */
+  width: 20%; /* Adjust the width based on your design */
+  height: 3px; /* Adjust the height based on your design */
+  background-color: #000; /* Use background-color instead of color */
+  transform: translateX(-50%); /* Center the element horizontally */
 }
 
 
@@ -164,11 +148,12 @@ nav a {
     /* Adjust the top position as needed */
   }
 
-  .linestick {
-    left: 50%;
-    top: 35%;
+  #straightLine {
+    left: 20%;
+    top: 35%; /* Adjust the top position based on your design */
+    width: 34%; /* Adjust the width based on your design */
   }
-
+  
   .project-container {
     width: 100%;
     left: 0%;
@@ -292,7 +277,7 @@ nav a {
     top: 27%;
     left: 30%;
     transform: translate(-50%, -50%);
-    font-size: 6vw; /* Adjust font size for smaller screens */
+    font-size: 4vw; /* Adjust font size for smaller screens */
     text-align: center;
     display: flex;
     flex-direction: column;

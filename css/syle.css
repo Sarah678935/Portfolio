@@ -1,0 +1,709 @@
+
+/* Container to restrict content within 1920x1080 on larger screens */
+.container {
+  max-width: 1920px;
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px;
+}
+#fullHD {
+  position: absolute;
+  left: -91px;
+  top: -901px;
+  width: 1920px;
+  height: 1080px;
+  background: #fce9e9;
+  background-blend-mode: normal;
+}
+
+#oval {
+  position: absolute;
+  left: 50%;
+  top: -160%; /* Adjust this value to move it higher or lower */
+  width: 1350px;
+  height: 1350px;
+  background: #d4ba9b;
+  background-blend-mode: normal;
+  border-radius: 50%;
+  margin-left: -675px; /* Half of the width */
+}
+#home {
+  position: absolute;
+  left: 50px;
+  top: 40px;
+  width: 82px;
+  height: 30px;
+  font-family: "32_Sarchia_Dastnus_2";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.18px;
+}
+
+#about {
+  position: absolute;
+  left: 170px;
+  top: 40px;
+  width: 94px;
+  height: 30px;
+  font-family: "32_Sarchia_Dastnus_2";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.18px;
+}
+
+
+
+#project {
+  position: absolute;
+  left: 290px;
+  top: 40px;
+  width: 135px;
+  height: 36px;
+  font-family: "32_Sarchia_Dastnus_2";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.18px;
+}
+
+#contact {
+  position: absolute;
+  left: 450px;
+  top: 40px;
+  width: 112px;
+  height: 36px;
+  font-family: "32_Sarchia_Dastnus_2";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.18px;
+}
+
+#group12 {
+  position: absolute;
+  right: 40px; /* Adjust the right position */
+  top: 300px;
+  width: 130px;
+  height: 32.2px;
+}
+
+#rectangle {
+  position: absolute;
+  right: 0px; /* Adjust the right position */
+  top: 0px;
+  width: 130px;
+  height: 32.2px;
+  border-radius: 25px;
+  background: #331d2c;
+  background-blend-mode: normal;
+}
+
+#text {
+  position: absolute;
+  right: 16px; /* Adjust the right position */
+  top: 4px;
+  width: 98px;
+  height: 24.2px;
+  color: #fce9e9;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#group11 {
+  position: absolute;
+  right: 40px;
+  top: 350px;
+  width: 130px;
+  height: 32.2px;
+}
+
+#rectangle4 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 130px;
+  height: 32.2px;
+  border-radius: 25px;
+  background: #331d2c;
+  background-blend-mode: normal;
+}
+
+#text {
+  position: absolute;
+  left: 16px;
+  top: 4px;
+  width: 98px;
+  height: 24.2px;
+  color: #fce9e9;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#group10 {
+  position: absolute;
+  right: 40px;
+  top: 500px;
+  width: 130px;
+  height: 32.2px;
+}
+
+#rectangle5 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 130px;
+  height: 32.2px;
+  border-radius: 25px;
+  background: #331d2c;
+  background-blend-mode: normal;
+}
+
+#text {
+  position: absolute;
+  left: 16px;
+  top: 4px;
+  width: 98px;
+  height: 24.2px;
+  color: #fce9e9;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#group13 {
+  position: absolute;
+  right: 40px;
+  top: 400px;
+  width: 130px;
+  height: 32.2px;
+}
+
+#rectangle3 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 130px;
+  height: 32.2px;
+  border-radius: 25px;
+  background: #331d2c;
+  background-blend-mode: normal;
+}
+
+#text {
+  position: absolute;
+  left: 16px;
+  top: 4px;
+  width: 98px;
+  height: 24.2px;
+  color: #fce9e9;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#group15 {
+  position: absolute;
+  right: 180px;
+  top: 300px;
+  width: 130px;
+  height: 32.2px;
+}
+
+#rectangle {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 130px;
+  height: 32.2px;
+  border-radius: 25px;
+  background: #331d2c;
+  background-blend-mode: normal;
+}
+
+#css {
+  position: absolute;
+  left: 16px;
+  top: 4px;
+  width: 98px;
+  height: 24.2px;
+  color: #fce9e9;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#group14 {
+  position: absolute;
+  right: 180px;
+  top: 350px;
+  width: 130px;
+  height: 32.2px;
+}
+
+#rectangle {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 130px;
+  height: 32.2px;
+  border-radius: 25px;
+  background: #331d2c;
+  background-blend-mode: normal;
+}
+
+#text {
+  position: absolute;
+  left: 16px;
+  top: 4px;
+  width: 98px;
+  height: 24.2px;
+  color: #fce9e9;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#group16 {
+  position: absolute;
+  right: 180px;
+  top: 400px;
+  width: 130px;
+  height: 32.2px;
+}
+
+#rectangle {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 130px;
+  height: 32.2px;
+  border-radius: 25px;
+  background: #331d2c;
+  background-blend-mode: normal;
+}
+
+#text {
+  position: absolute;
+  left: 16px;
+  top: 4px;
+  width: 98px;
+  height: 24.2px;
+  color: #fce9e9;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#group17 {
+  position: absolute;
+  right: 320px;
+  top: 400px;
+  width: 130px;
+  height: 32.2px;
+}
+
+#rectangle {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 130px;
+  height: 32.2px;
+  border-radius: 25px;
+  background: #331d2c;
+  background-blend-mode: normal;
+}
+
+#text {
+  position: absolute;
+  left: 16px;
+  top: 4px;
+  width: 98px;
+  height: 24.2px;
+  color: #fce9e9;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#group9 {
+  position: absolute;
+  right: 320px;
+  top: 300px;
+  width: 130px;
+  height: 32.2px;
+}
+
+#group {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 130px;
+  height: 32.2px;
+}
+
+#rectangle {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 130px;
+  height: 32.2px;
+  border-radius: 25px;
+  background: #331d2c;
+  background-blend-mode: normal;
+}
+
+#text {
+  position: absolute;
+  left: 16px;
+  top: 4px;
+  width: 98px;
+  height: 24.2px;
+  color: #fce9e9;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#group10 {
+  position: absolute;
+  right: 320px;
+  top: 350px;
+  width: 130px;
+  height: 32.2px;
+}
+
+#rectangle5 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 130px;
+  height: 32.2px;
+  border-radius: 25px;
+  background: #331d2c;
+  background-blend-mode: normal;
+}
+
+#git {
+  position: absolute;
+  left: 16px;
+  top: 4px;
+  width: 98px;
+  height: 24.2px;
+  color: #fce9e9;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#ovalCopy {
+  position: absolute;
+  left: 50%;
+  top: 900.7px;
+  width: 782px;
+  height: 782px;
+  background: #331d2c;
+  background-blend-mode: normal;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  margin-top: -391px; /* Half of the height */
+  margin-left: -391px; /* Half of the width */
+}
+
+#textCopy {
+  position: absolute;
+  right: 190px;
+  top: 190px;
+  width: 154px;
+  height: 37px;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: right;
+}
+#lineCopy {
+  position: absolute;
+  left: 1000px;
+  top: 240px;
+  width: 241.23px;
+  height: 2.43px;
+  background: #000; /* Set the color of the line */
+}
+#intherealm {
+  position: absolute;
+  left: 120px;
+  top: 300px;
+  width: 1090px;
+  height: 250px;
+  font-family: "32_Sarchia_Dastnus_2";
+  font-size: 20px;
+  font-weight: 200;
+}
+
+#oval2 {
+  position: absolute;
+  left: 50%; /* Set the left position to 50% of the parent container */
+  top: 60px; /* Set the top position to 50% of the parent container */
+  width: 73px;
+  height: 73px;
+  background: #331d2c;
+  background-blend-mode: normal;
+  border-radius: 50%;
+  transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+}
+#About {
+  position: absolute;
+  left: 610px;
+  top: 130px;
+  width: 136px;
+  height: 116px;
+  color: #331d2c;
+  font-family: "32_Sarchia_Dastnus_2";
+  font-size: 48px;
+  font-weight: 400;
+}
+
+
+.container {
+  background-color: #e6d8c8;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  top: 60px;
+}
+
+#fullHD {
+  position: absolute;
+  left: 170px;
+  top: -230px;
+  width: 1920px;
+  height: 1080px;
+  background: #e6d8c8;
+  background-blend-mode: normal;
+}
+
+#oval2 {
+  position: absolute;
+  left: -25px;
+  top: 350px;
+  width: 316px;
+  height: 514px;
+  background: #d4ba9b;
+  background-blend-mode: normal;
+  transform: rotate(-55deg);
+  border-radius: 50%;
+}
+
+#ovalCopy {
+  position: absolute;
+  left: 1100px;
+  top: -320px;
+  width: 585px;
+  height: 514px;
+  background: #d4ba9b;
+  background-blend-mode: normal;
+  transform: rotate(-55deg);
+  border-radius: 50%;
+}
+
+#oval3 {
+  position: absolute;
+  left: -140.56px;
+  top: -260.22px;
+  width: 500px;
+  height: 514px;
+  background: #a78295;
+  background-blend-mode: normal;
+  border-radius: 50%;
+}
+
+#oval {
+  position: absolute;
+  left: 1100px;
+  top: 400px;
+  width: 585px;
+  height: 514px;
+  background: #a78295;
+  background-blend-mode: normal;
+  transform: rotate(26.999998deg);
+  border-radius: 50%;
+}
+
+#about {
+  position: absolute;
+  left: 150px;
+  top: 40px;
+  width: 94px;
+  height: 30px;
+  font-family: "32_Sarchia_Dastnus_2";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.18px;
+}
+
+#home {
+  position: absolute;
+  left: 50px;
+  top: 40px;
+  width: 82px;
+  height: 30px;
+  font-family: "32_Sarchia_Dastnus_2";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.18px;
+}
+
+#project {
+  position: absolute;
+  left: 230px;
+  top: 40px;
+  width: 135px;
+  height: 36px;
+  font-family: "32_Sarchia_Dastnus_2";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.18px;
+}
+
+#contact {
+  position: absolute;
+  left: 370px;
+  top: 40px;
+  width: 112px;
+  height: 36px;
+  font-family: "32_Sarchia_Dastnus_2";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.18px;
+}
+#title {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  width: 442px;
+  height: 122px;
+  color: #757575;
+  font-family: "Bell MT";
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+
+#contactUS {
+  position: absolute;
+  left: 60%; /* Move the element horizontally to the center */
+  top: 9.5%; /* Move the element vertically to the center */
+  transform: translate(-50%, -50%); /* Adjust the element's position based on its own dimensions */
+  width: 442px;
+  height: 122px;
+  color: #757575;
+  font-family: "Bell MT";
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+
+.input-pair {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: calc(50% - 5px);
+  margin-right: 10px; /* Add margin to create space between input fields */
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  background-color: #d4ba9b;
+  color: #333;
+  border-radius: 20px;
+}
+
+/* Style for the placeholders of input fields */
+.input-field::placeholder {
+  color: #757575;
+  background-color: #D4BA9B;
+}
+/* Style for the message box container */
+.message-box-container {
+  text-align: left; /* Align the container and its content to the right */
+  margin-top: 15px; /* Adjust margin for spacing */
+}
+
+.message-box {
+  width: 180px; /* Set a constant width */
+  height: 100px; /* Set a constant height */
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  background-color: #d4ba9b;
+  color: #333;
+  border-radius: 20px;
+  resize: none; /* Disable resizing of the textarea */
+  margin-top: 15px; /* Adjust margin for spacing */
+}
+
+/* Style for the send button */
+/* Style for the send button */
+.send-button {
+  text-align: left;
+  margin-top: 15px; /* Adjust margin for spacing */
+}
+
+.send-button button {
+  padding: 10px 20px; /* Increase padding for a bigger button */
+  font-size: 14px; /* Increase font size */
+  background-color: #D4BA9B; /* Change background color */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #000000; /* Change text color */
+}
