@@ -27,7 +27,7 @@ nav {
 nav a {
   color: #331d2c;
   text-decoration: none;
-  font-size: 2vw; 
+  font-size: 2vw;
   font-weight: 400;
   padding: 10px 20px;
 }
@@ -60,15 +60,18 @@ nav a {
   font-weight: 400;
   z-index: 1;
 }
-
+.project-item{
+  list-style: none;
+  font-size: 2rem;
+}
 #straightLine {
   position: absolute;
   left: 75%;
-  top: 45%; 
-  width: 20%; 
-  height: 3px; 
-  background-color: #000; 
-  transform: translateX(-50%); 
+  top: 45%;
+  width: 20%;
+  height: 3px;
+  background-color: #000;
+  transform: translateX(-50%);
 }
 
 .project-container {
@@ -107,7 +110,9 @@ nav a {
 .project-con:hover .project-img {
   opacity: 1;
 }
-
+.small-oval {
+  display: none;
+}
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
   html,
@@ -121,19 +126,34 @@ nav a {
 
   .ourProject {
     position: absolute;
-    left: 21%;
-    font-size: 2rem;
+    left: 29%;
+    font-size: 2.5rem;
     color: #331d2c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     top: 29.8%;
-    /* Adjust the top position as needed */
+    
   }
 
   #straightLine {
-    left: 20%;
-    top: 35%; /* Adjust the top position based on your design */
-    width: 34%; /* Adjust the width based on your design */
+    left: 25%;
+    top: 38%; 
+    width: 80%; 
   }
 
+  .small-oval {
+    height: 50%; 
+    width: 50%; 
+    background-color: #a78295;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    padding: 15%; 
+    bottom: -30%;
+    left: -20%;
+    z-index: -1;
+  }
+  
+ 
   .project-container {
     width: 100%;
     left: 0%;
@@ -144,16 +164,14 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: left;
-
   }
 
   .project-con {
     margin: 2% 0;
     padding: 3% 0;
-    font-size: 1.4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: -10%;
     display: flex;
-    border-bottom: 2px solid #502141;
     flex-direction: row;
     align-items: center;
   }
@@ -161,7 +179,10 @@ nav a {
   .project-img {
     display: none;
   }
-
+  .project-item{
+    list-style: none;
+    font-size: 1.47rem;
+  }
   .burger {
     position: absolute;
     top: 2%;
