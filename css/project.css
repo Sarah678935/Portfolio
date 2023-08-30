@@ -8,13 +8,10 @@ body {
   box-sizing: border-box;
 }
 
-
 .burger input[type="checkbox"],
 .overlay-links {
   display: none;
 }
-
-
 
 nav {
   display: flex;
@@ -30,7 +27,7 @@ nav {
 nav a {
   color: #331d2c;
   text-decoration: none;
-  font-size: 2vw; /* Adjust font size using vw units */
+  font-size: 2vw; 
   font-weight: 400;
   padding: 10px 20px;
 }
@@ -38,9 +35,7 @@ nav a {
 .oval {
   position: absolute;
   margin-left: 100%;
-  /* Adjust the right distance from the right edge of the viewport */
   margin-bottom: 0%;
-  /* Adjust the top distance from the top edge of the viewport */
   width: 90%;
   top: 0%;
   padding-bottom: 90%;
@@ -69,13 +64,12 @@ nav a {
 #straightLine {
   position: absolute;
   left: 75%;
-  top: 45%; /* Adjust the top position based on your design */
-  width: 20%; /* Adjust the width based on your design */
-  height: 3px; /* Adjust the height based on your design */
-  background-color: #000; /* Use background-color instead of color */
-  transform: translateX(-50%); /* Center the element horizontally */
+  top: 45%; 
+  width: 20%; 
+  height: 3px; 
+  background-color: #000; 
+  transform: translateX(-50%); 
 }
-
 
 .project-container {
   position: absolute;
@@ -86,8 +80,6 @@ nav a {
   font-size: 3.5vh;
 }
 
-
-
 .project-con {
   display: flex;
   align-items: center;
@@ -95,21 +87,20 @@ nav a {
   text-decoration: none;
   color: #331d2c;
   cursor: pointer;
-  /* Add this line to set position for pseudo-element */
 }
 
 .project-img {
   position: absolute;
+  display: block;
   top: 50%;
   left: -250%;
-  width: 550px;
-  height: 500px;
+  width: 200%;
+  height: 200%;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
   margin: auto;
   transform: translateY(-50%);
-  /* Center vertically */
   border: 2px solid #331d2c;
 }
 
@@ -117,17 +108,8 @@ nav a {
   opacity: 1;
 }
 
-
-
-
-
-
-
-
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
-
-
   html,
   body {
     overflow: hidden;
@@ -136,8 +118,6 @@ nav a {
     touch-action: none;
     scroll-behavior: none;
   }
-
-
 
   .ourProject {
     position: absolute;
@@ -153,7 +133,7 @@ nav a {
     top: 35%; /* Adjust the top position based on your design */
     width: 34%; /* Adjust the width based on your design */
   }
-  
+
   .project-container {
     width: 100%;
     left: 0%;
@@ -164,6 +144,7 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: left;
+
   }
 
   .project-con {
@@ -176,7 +157,6 @@ nav a {
     flex-direction: row;
     align-items: center;
   }
-
 
   .project-img {
     display: none;
@@ -193,11 +173,10 @@ nav a {
     display: block;
     z-index: 9999;
   }
-  
+
   .burger input {
     display: none;
   }
-  
 
   .burger span {
     display: block;
@@ -210,48 +189,42 @@ nav a {
     transform: rotate(0deg);
     transition: 0.25s ease-in-out;
   }
-  
-  .burger span:nth-of-type(1) {
-    top: 0;
-    transform-origin: center;
-  }
-  
 
-  
-  
   .burger span:nth-of-type(1) {
     top: 0;
     transform-origin: center;
   }
-  
+
+  .burger span:nth-of-type(1) {
+    top: 0;
+    transform-origin: center;
+  }
+
   .burger span:nth-of-type(2) {
     top: 50%;
     transform: translateY(-50%);
     transform-origin: center;
   }
-  
+
   .burger span:nth-of-type(3) {
     top: 84%;
     transform-origin: center;
   }
-  
-  .burger input:checked ~ span:nth-of-type(1) {
-    transform: rotate(45deg);
-    top: 50%;
-  }
-  
 
-  
-  
   .burger input:checked ~ span:nth-of-type(1) {
     transform: rotate(45deg);
     top: 50%;
   }
-  
+
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+
   .burger input:checked ~ span:nth-of-type(2) {
     opacity: 0;
   }
-  
+
   .burger input:checked ~ span:nth-of-type(3) {
     transform: rotate(-45deg);
     top: 50%;
@@ -271,7 +244,7 @@ nav a {
     display: none;
     z-index: 2;
   }
-  
+
   .overlay-links {
     position: fixed;
     top: 27%;
@@ -302,8 +275,7 @@ nav a {
     background-color: rgba(167, 130, 149, 0.5);
     border-radius: 25%;
   }
-    nav
-   {
-  display: none;
-}
+  nav {
+    display: none;
+  }
 }
