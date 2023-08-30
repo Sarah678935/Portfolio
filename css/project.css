@@ -94,7 +94,7 @@ nav a {
   display: block;
   top: 50%;
   left: -250%;
-  width: 200%;
+  width: 150%;
   height: 200%;
   opacity: 0;
   pointer-events: none;
